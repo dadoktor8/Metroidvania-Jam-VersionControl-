@@ -4,47 +4,47 @@ timeCreated: 1528144529
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: proagonist_boxers_0
-    21300002: proagonist_boxers_1
-    21300004: proagonist_boxers_2
-    21300006: proagonist_boxers_3
-    21300008: proagonist_boxers_4
-    21300010: proagonist_boxers_5
-    21300012: proagonist_boxers_6
+    21300000: Idle_1
+    21300002: Idle_2
+    21300004: Idle_3
+    21300006: Idle_4
+    21300008: Idle_5
+    21300010: Idle_6
+    21300012: Idle_7
     21300014: proagonist_boxers_7
-    21300016: proagonist_boxers_8
-    21300018: proagonist_boxers_9
-    21300020: proagonist_boxers_10
-    21300022: proagonist_boxers_11
-    21300024: proagonist_boxers_12
-    21300026: proagonist_boxers_13
-    21300028: proagonist_boxers_14
+    21300016: Idle_8
+    21300018: Idle_9
+    21300020: Idle_10
+    21300022: Idle_11
+    21300024: Idle_12
+    21300026: Idle_13
+    21300028: Idle_14
     21300030: proagonist_boxers_15
-    21300032: proagonist_boxers_16
-    21300034: proagonist_boxers_17
-    21300036: proagonist_boxers_18
-    21300038: proagonist_boxers_19
-    21300040: proagonist_boxers_20
-    21300042: proagonist_boxers_21
-    21300044: proagonist_boxers_22
-    21300046: proagonist_boxers_23
-    21300048: proagonist_boxers_24
-    21300050: proagonist_boxers_25
-    21300052: proagonist_boxers_26
+    21300032: Idle_15
+    21300034: Idle_16
+    21300036: Idle_17
+    21300038: Walking_1
+    21300040: Walking_2
+    21300042: Walking_3
+    21300044: Walking_4
+    21300046: Walking_5
+    21300048: Walking_6
+    21300050: Walking_7
+    21300052: Walking_8
     21300054: proagonist_boxers_27
-    21300056: proagonist_boxers_28
-    21300058: proagonist_boxers_29
-    21300060: proagonist_boxers_30
-    21300062: proagonist_boxers_31
-    21300064: proagonist_boxers_32
-    21300066: proagonist_boxers_33
-    21300068: proagonist_boxers_34
-    21300070: proagonist_boxers_35
-    21300072: proagonist_boxers_36
-    21300074: proagonist_boxers_37
-    21300076: proagonist_boxers_38
-    21300078: proagonist_boxers_39
-    21300080: proagonist_boxers_40
+    21300056: PickUPW_1
+    21300058: PickUPW_2
+    21300060: PickUPW_3
+    21300062: PickUPW_4
+    21300064: PickUPW_5
+    21300066: PickUPW_6
+    21300068: PickUP_1
+    21300070: PickUP_2
+    21300072: PickUP_3
+    21300074: PickUP_4
+    21300076: PickUP_6
+    21300078: PickUP_7
+    21300080: PickUP_8
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,7 +112,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -142,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: proagonist_boxers_0
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 24
@@ -150,13 +150,13 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_1
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 88
@@ -164,13 +164,13 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_2
+      name: Idle_3
       rect:
         serializedVersion: 2
         x: 152
@@ -178,13 +178,13 @@ TextureImporter:
         width: 21
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_3
+      name: Idle_4
       rect:
         serializedVersion: 2
         x: 216
@@ -192,13 +192,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_4
+      name: Idle_5
       rect:
         serializedVersion: 2
         x: 280
@@ -206,13 +206,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_5
+      name: Idle_6
       rect:
         serializedVersion: 2
         x: 344
@@ -220,13 +220,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_6
+      name: Idle_7
       rect:
         serializedVersion: 2
         x: 408
@@ -234,7 +234,7 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -248,13 +248,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_8
+      name: Idle_8
       rect:
         serializedVersion: 2
         x: 24
@@ -262,13 +262,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_9
+      name: Idle_9
       rect:
         serializedVersion: 2
         x: 88
@@ -276,13 +276,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_10
+      name: Idle_10
       rect:
         serializedVersion: 2
         x: 152
@@ -290,13 +290,13 @@ TextureImporter:
         width: 21
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_11
+      name: Idle_11
       rect:
         serializedVersion: 2
         x: 216
@@ -304,13 +304,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_12
+      name: Idle_12
       rect:
         serializedVersion: 2
         x: 280
@@ -318,13 +318,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_13
+      name: Idle_13
       rect:
         serializedVersion: 2
         x: 344
@@ -332,13 +332,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_14
+      name: Idle_14
       rect:
         serializedVersion: 2
         x: 408
@@ -346,7 +346,7 @@ TextureImporter:
         width: 21
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,13 +360,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_16
+      name: Idle_15
       rect:
         serializedVersion: 2
         x: 24
@@ -374,13 +374,13 @@ TextureImporter:
         width: 21
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_17
+      name: Idle_16
       rect:
         serializedVersion: 2
         x: 88
@@ -388,13 +388,13 @@ TextureImporter:
         width: 21
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_18
+      name: Idle_17
       rect:
         serializedVersion: 2
         x: 152
@@ -402,13 +402,13 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_19
+      name: Walking_1
       rect:
         serializedVersion: 2
         x: 215
@@ -416,13 +416,13 @@ TextureImporter:
         width: 24
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_20
+      name: Walking_2
       rect:
         serializedVersion: 2
         x: 282
@@ -430,13 +430,13 @@ TextureImporter:
         width: 17
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_21
+      name: Walking_3
       rect:
         serializedVersion: 2
         x: 343
@@ -444,13 +444,13 @@ TextureImporter:
         width: 27
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_22
+      name: Walking_4
       rect:
         serializedVersion: 2
         x: 407
@@ -458,13 +458,13 @@ TextureImporter:
         width: 25
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_23
+      name: Walking_5
       rect:
         serializedVersion: 2
         x: 474
@@ -472,13 +472,13 @@ TextureImporter:
         width: 16
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_24
+      name: Walking_6
       rect:
         serializedVersion: 2
         x: 24
@@ -486,13 +486,13 @@ TextureImporter:
         width: 27
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_25
+      name: Walking_7
       rect:
         serializedVersion: 2
         x: 88
@@ -500,13 +500,13 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_26
+      name: Walking_8
       rect:
         serializedVersion: 2
         x: 152
@@ -514,7 +514,7 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -528,13 +528,13 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_28
+      name: PickUPW_1
       rect:
         serializedVersion: 2
         x: 280
@@ -542,13 +542,13 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_29
+      name: PickUPW_2
       rect:
         serializedVersion: 2
         x: 344
@@ -556,13 +556,13 @@ TextureImporter:
         width: 31
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_30
+      name: PickUPW_3
       rect:
         serializedVersion: 2
         x: 408
@@ -570,13 +570,13 @@ TextureImporter:
         width: 38
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_31
+      name: PickUPW_4
       rect:
         serializedVersion: 2
         x: 472
@@ -584,13 +584,13 @@ TextureImporter:
         width: 37
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_32
+      name: PickUPW_5
       rect:
         serializedVersion: 2
         x: 24
@@ -598,13 +598,13 @@ TextureImporter:
         width: 30
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_33
+      name: PickUPW_6
       rect:
         serializedVersion: 2
         x: 88
@@ -612,13 +612,13 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_34
+      name: PickUP_1
       rect:
         serializedVersion: 2
         x: 152
@@ -626,13 +626,13 @@ TextureImporter:
         width: 29
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_35
+      name: PickUP_2
       rect:
         serializedVersion: 2
         x: 216
@@ -640,13 +640,13 @@ TextureImporter:
         width: 27
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_36
+      name: PickUP_3
       rect:
         serializedVersion: 2
         x: 280
@@ -654,13 +654,13 @@ TextureImporter:
         width: 32
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_37
+      name: PickUP_4
       rect:
         serializedVersion: 2
         x: 344
@@ -668,13 +668,13 @@ TextureImporter:
         width: 32
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_38
+      name: PickUP_6
       rect:
         serializedVersion: 2
         x: 408
@@ -682,13 +682,13 @@ TextureImporter:
         width: 27
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_39
+      name: PickUP_7
       rect:
         serializedVersion: 2
         x: 472
@@ -696,13 +696,13 @@ TextureImporter:
         width: 29
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: proagonist_boxers_40
+      name: PickUP_8
       rect:
         serializedVersion: 2
         x: 24
@@ -710,7 +710,7 @@ TextureImporter:
         width: 21
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
