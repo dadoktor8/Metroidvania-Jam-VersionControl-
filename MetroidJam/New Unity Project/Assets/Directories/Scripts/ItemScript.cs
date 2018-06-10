@@ -48,9 +48,6 @@ public class ItemScript : MonoBehaviour
         if(collision.tag == "Player")
         {
             float distToCenter = (pickUpTrigger.transform.position - collision.transform.position).magnitude;
-
-            Debug.Log(distToCenter + "/" + enterDistToCenter);
-
             audioSource.volume = audioVolumeCurve.Evaluate(1f - (distToCenter / enterDistToCenter));
         }
     }

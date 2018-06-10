@@ -16,6 +16,7 @@ public class PhysicsObject : MonoBehaviour {
     protected RaycastHit2D[] hitBuffer = new RaycastHit2D[16];
     protected List<RaycastHit2D> hitBufferList = new List<RaycastHit2D> (16);
 
+    protected Vector2 addedForce;
 
     protected const float minMoveDistance = 0.001f;
     protected const float shellRadius = 0.01f;
@@ -23,6 +24,7 @@ public class PhysicsObject : MonoBehaviour {
     void OnEnable()
     {
         rb2d = GetComponent<Rigidbody2D> ();
+        addedForce = new Vector2();
     }
 
     void Start () 
@@ -46,7 +48,8 @@ public class PhysicsObject : MonoBehaviour {
     void FixedUpdate()
     {
         velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
-        velocity.x = targetVelocity.x;
+        velocity.x = targetVelocity.x + addedForce.x;
+        addedForce -= addedForce * 0.1f;
 
         grounded = false;
 
@@ -104,4 +107,8 @@ public class PhysicsObject : MonoBehaviour {
         rb2d.position = rb2d.position + move.normalized * distance;
     }
 
+    public void AddForce(Vector2 force)
+    {
+        addedForce += force;
+    }
 }
