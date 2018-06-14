@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy1
-  - Enemy2
+  - Pill
+  - Enemy
   layers:
   - Default
   - TransparentFX

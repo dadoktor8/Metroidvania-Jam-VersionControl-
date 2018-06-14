@@ -1,16 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 public class HealthScript : MonoBehaviour
 {
+    public bool interactable = true;
+
+    [Header("Display Variables")]
+    public Image healthBar; 
+
+    [Header("Health Settings")]
     public float totalHealth;
-    public float currHealth;
+    private float currHealth;
 
-    public List<DamageType> damageTypeList;
+    public List<HitType> hitTypeList;
 
-    private Collider2D latestDamageObj;
+    private Collider2D latestHitObj;
 
     private void Awake()
     {
@@ -20,53 +27,56 @@ public class HealthScript : MonoBehaviour
     public void ResetHealth()
     {
         currHealth = totalHealth;
+        UpdateHealthDisplay();
     }
 
-    public void TakeDamage(Collider2D sourceObj, string sourceTag)
+    public void ProcessHit(Collider2D sourceObj, string sourceTag)
     {
-        for (int i = 0; i < damageTypeList.Count; i++)
+        for (int i = 0; i < hitTypeList.Count; i++)
         {
-            if (sourceTag == damageTypeList[i].tag)
+            if (sourceTag == hitTypeList[i].tag)
             {
-                latestDamageObj = sourceObj;
-                TakeDamage(damageTypeList[i]);
+                latestHitObj = sourceObj;
+                ProcessHit(hitTypeList[i]);
                 return;
             }
         }
     }
 
-    public void TakeDamage(DamageType damageType)
+    public void ProcessHit(HitType hitType)
     {
-        currHealth -= damageType.damage;
-        damageType.onDamaged.Invoke();
+        ProcessHit(hitType.hitValue);
+        hitType.onHit.Invoke();
         if (currHealth <= 0)
-            damageType.onDeath.Invoke();
+            hitType.onDeath.Invoke();
+    }
+
+    public void ProcessHit(float hitValue)
+    {
+        currHealth += hitValue;
+        currHealth = Mathf.Clamp(currHealth, 0f, totalHealth);
+        UpdateHealthDisplay();
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        for(int i = 0; i < damageTypeList.Count; i++)
-        {
-            if(damageTypeList[i].isTrigger && collision.tag == damageTypeList[i].tag)
-            {
-                latestDamageObj = collision;
-                TakeDamage(damageTypeList[i]);
-                break;
-            }
-        }
+        if (!interactable)
+            return;
+
+        ProcessHit(collision, collision.tag);
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        for (int i = 0; i < damageTypeList.Count; i++)
-        {
-            if (damageTypeList[i].isCollider && collision.gameObject.tag == damageTypeList[i].tag)
-            {
-                latestDamageObj = collision.collider;
-                TakeDamage(damageTypeList[i]);
-                break;
-            }
-        }
+        if (!interactable)
+            return;
+
+        ProcessHit(collision.collider, collision.gameObject.tag);
+    }
+
+    public void UpdateHealthDisplay()
+    {
+        healthBar.fillAmount = currHealth / totalHealth;
     }
 
     #region Common Effects Functions
@@ -85,19 +95,28 @@ public class HealthScript : MonoBehaviour
 
     public void KnockBack(float force)
     {
-        GetComponent<PhysicsObject>().AddForce((transform.position - latestDamageObj.transform.position).normalized * force);
+        GetComponent<PhysicsObject>().AddForce((transform.position - latestHitObj.transform.position).normalized * force);
+    }
+
+    public void RemoveHitObject(bool isDestroy)
+    {
+        if (isDestroy)
+            Destroy(latestHitObj.gameObject);
+        else
+            latestHitObj.gameObject.SetActive(false);
+        latestHitObj = null;
     }
 
     #endregion Common Effects Functions
 }
 
 [System.Serializable]
-public class DamageType
+public class HitType
 {
     public string tag;
     public bool isTrigger;
     public bool isCollider;
-    public float damage;
-    public UnityEvent onDamaged;
+    public float hitValue;
+    public UnityEvent onHit;
     public UnityEvent onDeath;
 }
