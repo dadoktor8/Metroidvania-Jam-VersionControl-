@@ -18,6 +18,7 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD:MetroidJam/New Unity Project/Assets/Directories/PlayerData/Protagonist(Boxer).prefab
   - component: {fileID: 4911448247868482}
   - component: {fileID: 212679196236095248}
   - component: {fileID: 320076515516636026}
@@ -28,6 +29,17 @@ GameObject:
   - component: {fileID: 70995682835175840}
   m_Layer: 0
   m_Name: Protagonist(Boxer)
+=======
+  - component: {fileID: 4636443821333218}
+  - component: {fileID: 95808641531144034}
+  - component: {fileID: 212390050044130540}
+  - component: {fileID: 50506287529216434}
+  - component: {fileID: 114905191708107596}
+  - component: {fileID: 114449356901693828}
+  - component: {fileID: 114500577792518608}
+  m_Layer: 8
+  m_Name: Character
+>>>>>>> b49c915a18ec072f219810cd70d7064e5d590f7b:MetroidJam/New Unity Project/Assets/Directories/PlayerData/Character.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +121,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81d711fd5ad3214382657a8760914dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:MetroidJam/New Unity Project/Assets/Directories/PlayerData/Protagonist(Boxer).prefab
 --- !u!114 &114593850192565630
+=======
+  inventory:
+  - {fileID: 11400000, guid: 5c0234af6b8acd44fb5d52dc045c60b4, type: 2}
+--- !u!114 &114500577792518608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1228212776850782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb0f5faec1f050a46a2fc5748ac8fb25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: 1
+  healthBar: {fileID: 0}
+  totalHealth: 100
+  hitTypeList:
+  - tag: Enemy
+    isTrigger: 1
+    isCollider: 0
+    hitValue: -10
+    onHit:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114500577792518608}
+          m_MethodName: KnockBack
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 10
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onDeath:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1228212776850782}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - tag: Pill
+    isTrigger: 1
+    isCollider: 0
+    hitValue: 50
+    onHit:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114500577792518608}
+          m_MethodName: RemoveHitObject
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onDeath:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+--- !u!114 &114905191708107596
+>>>>>>> b49c915a18ec072f219810cd70d7064e5d590f7b:MetroidJam/New Unity Project/Assets/Directories/PlayerData/Character.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
