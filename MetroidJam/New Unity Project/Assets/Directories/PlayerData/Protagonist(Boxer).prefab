@@ -9,109 +9,127 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1228212776850782}
+  m_RootGameObject: {fileID: 1586752213504184}
   m_IsPrefabParent: 1
---- !u!1 &1228212776850782
+--- !u!1 &1586752213504184
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4636443821333218}
-  - component: {fileID: 95808641531144034}
-  - component: {fileID: 212390050044130540}
-  - component: {fileID: 50506287529216434}
-  - component: {fileID: 114905191708107596}
-  - component: {fileID: 114449356901693828}
-  m_Layer: 8
-  m_Name: Character
+  - component: {fileID: 4911448247868482}
+  - component: {fileID: 212679196236095248}
+  - component: {fileID: 320076515516636026}
+  - component: {fileID: 95156211516040066}
+  - component: {fileID: 114201633584733160}
+  - component: {fileID: 114593850192565630}
+  - component: {fileID: 50790825577543804}
+  - component: {fileID: 70995682835175840}
+  m_Layer: 0
+  m_Name: Protagonist(Boxer)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4636443821333218
+--- !u!4 &4911448247868482
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228212776850782}
+  m_GameObject: {fileID: 1586752213504184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.16, y: -1.34, z: 0.16295576}
-  m_LocalScale: {x: 2.144942, y: 1.7404078, z: 1}
+  m_LocalPosition: {x: -0.949, y: 0.324, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50506287529216434
+--- !u!50 &50790825577543804
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228212776850782}
-  m_BodyType: 0
+  m_GameObject: {fileID: 1586752213504184}
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!95 &95808641531144034
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!70 &70995682835175840
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1586752213504184}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.29, y: 0.64}
+  m_Direction: 0
+--- !u!95 &95156211516040066
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228212776850782}
+  m_GameObject: {fileID: 1586752213504184}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba0b80ff14a095d43a1fb38d6ebe879c, type: 2}
+  m_Controller: {fileID: 9100000, guid: a43867189c8a9c04f98a56129e594251, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114449356901693828
+--- !u!114 &114201633584733160
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228212776850782}
-  m_Enabled: 1
+  m_GameObject: {fileID: 1586752213504184}
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c709455f942834c9292d36ceba1fb7, type: 3}
+  m_Script: {fileID: 11500000, guid: c81d711fd5ad3214382657a8760914dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory:
-  - {fileID: 11400000, guid: 5c0234af6b8acd44fb5d52dc045c60b4, type: 2}
---- !u!114 &114905191708107596
+--- !u!114 &114593850192565630
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228212776850782}
+  m_GameObject: {fileID: 1586752213504184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7be098710019ff041b63384385ccce35, type: 3}
+  m_Script: {fileID: 11500000, guid: 709ee11994a2f44658e5fc9887c45081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
---- !u!212 &212390050044130540
+  minGroundNormalY: 0.65
+  gravityModifier: 0.6
+  maxSpeed: 1
+  jumpTakeOffSpeed: 7
+--- !u!212 &212679196236095248
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228212776850782}
+  m_GameObject: {fileID: 1586752213504184}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -140,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 241b9fa13af51224e8cbe5ae05c78ee0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -148,5 +166,25 @@ SpriteRenderer:
   m_Size: {x: 0.21, y: 0.58}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!320 &320076515516636026
+PlayableDirector:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1586752213504184}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 8a3f69a2b2d445e478e2919b6fc62e40, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 0}
+    value: {fileID: 1586752213504184}
+  - key: {fileID: 0}
+    value: {fileID: 1586752213504184}
+  m_ExposedReferences:
+    m_References: []
