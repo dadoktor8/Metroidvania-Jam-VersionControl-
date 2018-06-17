@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pill
   - Enemy
+  - Enemy1
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,6 @@ TagManager:
   - name: Player
     uniqueID: 4224447739
     locked: 0
-  - name: Foreground
+  - name: Ground
     uniqueID: 1160564901
     locked: 0

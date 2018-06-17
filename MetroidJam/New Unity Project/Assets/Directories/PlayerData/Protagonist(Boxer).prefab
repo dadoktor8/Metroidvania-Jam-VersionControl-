@@ -9,48 +9,36 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1586752213504184}
+  m_RootGameObject: {fileID: 1499077326500668}
   m_IsPrefabParent: 1
---- !u!1 &1586752213504184
+--- !u!1 &1499077326500668
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD:MetroidJam/New Unity Project/Assets/Directories/PlayerData/Protagonist(Boxer).prefab
-  - component: {fileID: 4911448247868482}
-  - component: {fileID: 212679196236095248}
-  - component: {fileID: 320076515516636026}
-  - component: {fileID: 95156211516040066}
-  - component: {fileID: 114201633584733160}
-  - component: {fileID: 114593850192565630}
-  - component: {fileID: 50790825577543804}
-  - component: {fileID: 70995682835175840}
+  - component: {fileID: 4859634013404496}
+  - component: {fileID: 212656010450411448}
+  - component: {fileID: 320346539845203138}
+  - component: {fileID: 95068505439089406}
+  - component: {fileID: 114817665105501898}
+  - component: {fileID: 114893546579493382}
+  - component: {fileID: 50127334192656210}
+  - component: {fileID: 70192162468857556}
   m_Layer: 0
   m_Name: Protagonist(Boxer)
-=======
-  - component: {fileID: 4636443821333218}
-  - component: {fileID: 95808641531144034}
-  - component: {fileID: 212390050044130540}
-  - component: {fileID: 50506287529216434}
-  - component: {fileID: 114905191708107596}
-  - component: {fileID: 114449356901693828}
-  - component: {fileID: 114500577792518608}
-  m_Layer: 8
-  m_Name: Character
->>>>>>> b49c915a18ec072f219810cd70d7064e5d590f7b:MetroidJam/New Unity Project/Assets/Directories/PlayerData/Character.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4911448247868482
+--- !u!4 &4859634013404496
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586752213504184}
+  m_GameObject: {fileID: 1499077326500668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.949, y: 0.324, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -58,13 +46,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50790825577543804
+--- !u!50 &50127334192656210
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586752213504184}
+  m_GameObject: {fileID: 1499077326500668}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
@@ -78,12 +66,12 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &70995682835175840
+--- !u!70 &70192162468857556
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586752213504184}
+  m_GameObject: {fileID: 1499077326500668}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -93,13 +81,13 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.29, y: 0.64}
   m_Direction: 0
---- !u!95 &95156211516040066
+--- !u!95 &95068505439089406
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586752213504184}
+  m_GameObject: {fileID: 1499077326500668}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a43867189c8a9c04f98a56129e594251, type: 2}
@@ -110,105 +98,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114201633584733160
+--- !u!114 &114817665105501898
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586752213504184}
+  m_GameObject: {fileID: 1499077326500668}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c81d711fd5ad3214382657a8760914dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:MetroidJam/New Unity Project/Assets/Directories/PlayerData/Protagonist(Boxer).prefab
---- !u!114 &114593850192565630
-=======
-  inventory:
-  - {fileID: 11400000, guid: 5c0234af6b8acd44fb5d52dc045c60b4, type: 2}
---- !u!114 &114500577792518608
+--- !u!114 &114893546579493382
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228212776850782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb0f5faec1f050a46a2fc5748ac8fb25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactable: 1
-  healthBar: {fileID: 0}
-  totalHealth: 100
-  hitTypeList:
-  - tag: Enemy
-    isTrigger: 1
-    isCollider: 0
-    hitValue: -10
-    onHit:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114500577792518608}
-          m_MethodName: KnockBack
-          m_Mode: 4
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 10
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    onDeath:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1228212776850782}
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - tag: Pill
-    isTrigger: 1
-    isCollider: 0
-    hitValue: 50
-    onHit:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114500577792518608}
-          m_MethodName: RemoveHitObject
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    onDeath:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
---- !u!114 &114905191708107596
->>>>>>> b49c915a18ec072f219810cd70d7064e5d590f7b:MetroidJam/New Unity Project/Assets/Directories/PlayerData/Character.prefab
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586752213504184}
+  m_GameObject: {fileID: 1499077326500668}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 709ee11994a2f44658e5fc9887c45081, type: 3}
@@ -218,12 +124,12 @@ MonoBehaviour:
   gravityModifier: 0.6
   maxSpeed: 1
   jumpTakeOffSpeed: 7
---- !u!212 &212679196236095248
+--- !u!212 &212656010450411448
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586752213504184}
+  m_GameObject: {fileID: 1499077326500668}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -262,12 +168,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!320 &320076515516636026
+--- !u!320 &320346539845203138
 PlayableDirector:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586752213504184}
+  m_GameObject: {fileID: 1499077326500668}
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 8a3f69a2b2d445e478e2919b6fc62e40, type: 2}
@@ -277,8 +183,8 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 0}
-    value: {fileID: 1586752213504184}
+    value: {fileID: 1499077326500668}
   - key: {fileID: 0}
-    value: {fileID: 1586752213504184}
+    value: {fileID: 1499077326500668}
   m_ExposedReferences:
     m_References: []

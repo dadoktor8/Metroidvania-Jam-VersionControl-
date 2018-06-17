@@ -1,0 +1,1258 @@
+fileFormatVersion: 2
+guid: ac9db892a93794241a4762f4a1c1e625
+timeCreated: 1529254112
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: proagonist_boxers_allMovements_0
+    21300002: proagonist_boxers_allMovements_1
+    21300004: proagonist_boxers_allMovements_2
+    21300006: proagonist_boxers_allMovements_3
+    21300008: proagonist_boxers_allMovements_4
+    21300010: proagonist_boxers_allMovements_5
+    21300012: proagonist_boxers_allMovements_6
+    21300014: proagonist_boxers_allMovements_7
+    21300016: proagonist_boxers_allMovements_8
+    21300018: proagonist_boxers_allMovements_9
+    21300020: proagonist_boxers_allMovements_10
+    21300022: proagonist_boxers_allMovements_11
+    21300024: proagonist_boxers_allMovements_12
+    21300026: proagonist_boxers_allMovements_13
+    21300028: proagonist_boxers_allMovements_14
+    21300030: proagonist_boxers_allMovements_15
+    21300032: proagonist_boxers_allMovements_16
+    21300034: proagonist_boxers_allMovements_17
+    21300036: proagonist_boxers_allMovements_18
+    21300038: proagonist_boxers_allMovements_19
+    21300040: proagonist_boxers_allMovements_20
+    21300042: proagonist_boxers_allMovements_21
+    21300044: proagonist_boxers_allMovements_22
+    21300046: proagonist_boxers_allMovements_23
+    21300048: proagonist_boxers_allMovements_24
+    21300050: proagonist_boxers_allMovements_25
+    21300052: proagonist_boxers_allMovements_26
+    21300054: proagonist_boxers_allMovements_27
+    21300056: proagonist_boxers_allMovements_28
+    21300058: proagonist_boxers_allMovements_29
+    21300060: proagonist_boxers_allMovements_30
+    21300062: proagonist_boxers_allMovements_31
+    21300064: proagonist_boxers_allMovements_32
+    21300066: proagonist_boxers_allMovements_33
+    21300068: proagonist_boxers_allMovements_34
+    21300070: proagonist_boxers_allMovements_35
+    21300072: proagonist_boxers_allMovements_36
+    21300074: proagonist_boxers_allMovements_37
+    21300076: proagonist_boxers_allMovements_38
+    21300078: proagonist_boxers_allMovements_39
+    21300080: proagonist_boxers_allMovements_40
+    21300082: proagonist_boxers_allMovements_41
+    21300084: proagonist_boxers_allMovements_42
+    21300086: proagonist_boxers_allMovements_43
+    21300088: proagonist_boxers_allMovements_44
+    21300090: proagonist_boxers_allMovements_45
+    21300092: proagonist_boxers_allMovements_46
+    21300094: proagonist_boxers_allMovements_47
+    21300096: proagonist_boxers_allMovements_48
+    21300098: proagonist_boxers_allMovements_49
+    21300100: proagonist_boxers_allMovements_50
+    21300102: proagonist_boxers_allMovements_51
+    21300104: proagonist_boxers_allMovements_52
+    21300106: proagonist_boxers_allMovements_53
+    21300108: proagonist_boxers_allMovements_54
+    21300110: proagonist_boxers_allMovements_55
+    21300112: proagonist_boxers_allMovements_56
+    21300114: proagonist_boxers_allMovements_57
+    21300116: proagonist_boxers_allMovements_58
+    21300118: proagonist_boxers_allMovements_59
+    21300120: proagonist_boxers_allMovements_60
+    21300122: proagonist_boxers_allMovements_61
+    21300124: proagonist_boxers_allMovements_62
+    21300126: proagonist_boxers_allMovements_63
+    21300128: proagonist_boxers_allMovements_64
+    21300130: proagonist_boxers_allMovements_65
+    21300132: proagonist_boxers_allMovements_66
+    21300134: proagonist_boxers_allMovements_67
+    21300136: proagonist_boxers_allMovements_68
+    21300138: proagonist_boxers_allMovements_69
+    21300140: proagonist_boxers_allMovements_70
+    21300142: proagonist_boxers_allMovements_71
+    21300144: proagonist_boxers_allMovements_72
+    21300146: proagonist_boxers_allMovements_73
+    21300148: proagonist_boxers_allMovements_74
+    21300150: proagonist_boxers_allMovements_75
+    21300152: proagonist_boxers_allMovements_76
+    21300154: proagonist_boxers_allMovements_77
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 443
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 443
+        width: 17
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 442
+        width: 18
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 443
+        width: 17
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_4
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 443
+        width: 15
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_5
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 443
+        width: 16
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_6
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 442
+        width: 17
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_7
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 443
+        width: 15
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 394
+        width: 17
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 394
+        width: 16
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_10
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 395
+        width: 18
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 395
+        width: 17
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_12
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 399
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_13
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 399
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_14
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 399
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_15
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 399
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_16
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 349
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_17
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 349
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_18
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 349
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_19
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 349
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_20
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 348
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_21
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 349
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_22
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 349
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_23
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 349
+        width: 13
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_24
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 299
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 298
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_26
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 299
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_27
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 299
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_28
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 299
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_29
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 299
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_30
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 299
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_31
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 299
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_32
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 249
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_33
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 249
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_34
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 249
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_35
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 249
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_36
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 249
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_37
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 246
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_38
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 249
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_39
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 244
+        width: 25
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_40
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 194
+        width: 22
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_41
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 195
+        width: 25
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_42
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 199
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_43
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 199
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_44
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 199
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_45
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 199
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_46
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 199
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_47
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 199
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_48
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 149
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_49
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 151
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 149
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_51
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 149
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_52
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 149
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_53
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 150
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_54
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 149
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_55
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 149
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_56
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 99
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_57
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 99
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_58
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 99
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_59
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 99
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_60
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 99
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_61
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 101
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_62
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 99
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_63
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 99
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 49
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_65
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 49
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_66
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 49
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_67
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 49
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_68
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 49
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_69
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 49
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_70
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 49
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_71
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 51
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_73
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_74
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_75
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_76
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: proagonist_boxers_allMovements_77
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 0
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
