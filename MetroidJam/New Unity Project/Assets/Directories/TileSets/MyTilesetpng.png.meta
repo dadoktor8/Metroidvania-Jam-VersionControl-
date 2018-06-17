@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,6 +103,16 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -110,12 +120,12 @@ TextureImporter:
       name: MyTilesetpng_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 992
-        width: 32
-        height: 32
+        x: 1
+        y: 993
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,12 +134,12 @@ TextureImporter:
       name: MyTilesetpng_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 992
-        width: 32
-        height: 32
+        x: 33
+        y: 993
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,12 +148,12 @@ TextureImporter:
       name: MyTilesetpng_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 992
-        width: 32
-        height: 32
+        x: 65
+        y: 993
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,12 +162,12 @@ TextureImporter:
       name: MyTilesetpng_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 992
-        width: 32
-        height: 32
+        x: 97
+        y: 993
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,12 +176,12 @@ TextureImporter:
       name: MyTilesetpng_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 992
-        width: 32
-        height: 32
+        x: 129
+        y: 993
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,12 +190,12 @@ TextureImporter:
       name: MyTilesetpng_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 992
-        width: 32
-        height: 32
+        x: 161
+        y: 993
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
