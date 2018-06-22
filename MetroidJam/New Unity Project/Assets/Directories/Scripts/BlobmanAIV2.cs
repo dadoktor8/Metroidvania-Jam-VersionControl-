@@ -19,13 +19,16 @@ public class BlobmanAIV2 : MonoBehaviour
 
     [Header("Pursue & Attack Phase Settings")]
     public EnemyAttackType attackType;
+    public GameObject attackRoot;
     public GameObject attackPrefab; //used depending on attack type e.g. projectile
     public float pursueSpeed;
     public float attackRange;
     public float attackDuration;
+    public float timeTillDamage;
 
     private GameObject attackTarget;
     private float attackElapsed;
+    private bool damageDealt;
 
     private EnemyPhase phase;
 
@@ -81,6 +84,20 @@ public class BlobmanAIV2 : MonoBehaviour
             case EnemyPhase.Attack:
                 {
                     attackElapsed += Time.deltaTime;
+                    if(attackElapsed >= timeTillDamage && !damageDealt)
+                    {
+                        switch(attackType)
+                        {
+                            case EnemyAttackType.Melee:
+                                attackTarget.GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), gameObject.tag);
+                                break;
+                            case EnemyAttackType.Projectile:
+                                GameObject bullet = Instantiate(attackPrefab);
+                                bullet.GetComponent<BlobmanBulletScript>().Activate(attackRoot.transform.position, new Vector2(transform.localScale.x, 0f));
+                                break;
+                        }
+                        damageDealt = true;
+                    }
                     if (attackElapsed >= attackDuration)
                         SetPhase(EnemyPhase.Pursue);
                 }
@@ -113,14 +130,9 @@ public class BlobmanAIV2 : MonoBehaviour
 
                 break;
             case EnemyPhase.Attack:
-                switch(attackType)
-                {
-                    case EnemyAttackType.Melee:
-                        animator.Play("EnemyAttack");
-                        attackTarget.GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), gameObject.tag);
-                        attackElapsed = 0;
-                        break;
-                }
+                animator.Play("EnemyAttack");
+                attackElapsed = 0;
+                damageDealt = false;
                 break;
         }
         phase = newPhase;

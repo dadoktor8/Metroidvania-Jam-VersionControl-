@@ -63,7 +63,15 @@ public class HealthScript : MonoBehaviour
         if (!interactable)
             return;
 
-        ProcessHit(collision, collision.tag);
+        for (int i = 0; i < hitTypeList.Count; i++)
+        {
+            if (collision.tag == hitTypeList[i].tag && hitTypeList[i].isTrigger)
+            {
+                latestHitObj = collision;
+                ProcessHit(hitTypeList[i]);
+                return;
+            }
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -71,7 +79,15 @@ public class HealthScript : MonoBehaviour
         if (!interactable)
             return;
 
-        ProcessHit(collision.collider, collision.gameObject.tag);
+        for (int i = 0; i < hitTypeList.Count; i++)
+        {
+            if (collision.gameObject.tag == hitTypeList[i].tag && hitTypeList[i].isCollider)
+            {
+                latestHitObj = collision.collider;
+                ProcessHit(hitTypeList[i]);
+                return;
+            }
+        }
     }
 
     public void UpdateHealthDisplay()
