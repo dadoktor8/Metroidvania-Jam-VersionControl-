@@ -111,7 +111,7 @@ public class HealthScript : MonoBehaviour
 
     public void KnockBack(float force)
     {
-        GetComponent<PhysicsObject>().AddForce((transform.position - latestHitObj.transform.position).normalized * force);
+        //GetComponent<PhysicsObject>().AddForce((transform.position - latestHitObj.transform.position).normalized * force);
     }
 
     public void RemoveHitObject(bool isDestroy)
