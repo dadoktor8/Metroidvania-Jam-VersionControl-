@@ -21,4 +21,10 @@ public class BlobmanBulletScript : MonoBehaviour
     {
         transform.Translate(moveDir * moveSpeed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+            Destroy(gameObject);
+    }
 }

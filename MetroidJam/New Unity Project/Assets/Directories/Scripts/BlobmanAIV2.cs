@@ -76,7 +76,9 @@ namespace UnityStandardAssets._2D
                         MoveTo((Vector2)transform.position + moveDir, patrolSpeed, false);
 
                         RaycastHit2D viewScan = Physics2D.Raycast(transform.position, transform.localScale.x * Vector2.right, viewRange, LayerMask.GetMask("Player"));
-                        if (viewScan.collider != null && viewScan.collider.tag == "Player" && viewScan.collider.gameObject.activeSelf)
+                        RaycastHit2D viewObstructScan = Physics2D.Raycast(transform.position, transform.localScale.x * Vector2.right, viewRange, LayerMask.GetMask("Ground"));
+                        bool unObstructedView = viewScan.collider != null && (viewObstructScan.collider == null || (viewObstructScan.collider != null && viewScan.distance < viewObstructScan.distance));
+                        if (unObstructedView && viewScan.collider.gameObject.activeSelf)
                         {
                             attackTarget = viewScan.collider.gameObject;
                             SetPhase(EnemyPhase.Pursue);
