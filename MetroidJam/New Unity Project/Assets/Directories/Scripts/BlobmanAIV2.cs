@@ -93,7 +93,7 @@ namespace UnityStandardAssets._2D
                             return;
                         }
 
-                        MoveTo(attackTarget.transform.position, pursueSpeed, true);
+                        MoveTo(attackTarget.transform.position + new Vector3((0.5f * transform.localScale.x), 0f, 0f), pursueSpeed, true);
 
                         if ((transform.position - attackTarget.transform.position).sqrMagnitude <= Mathf.Pow(attackRange, 2f))
                             SetPhase(EnemyPhase.Attack);
@@ -102,6 +102,11 @@ namespace UnityStandardAssets._2D
                 case EnemyPhase.Attack:
                     {
                         attackElapsed += Time.deltaTime;
+                        if (attackType != EnemyAttackType.Projectile && (transform.position - attackTarget.transform.position).sqrMagnitude > Mathf.Pow(attackRange, 2f) && !damageDealt)
+                        {
+                            animator.Play("EnemyIdle");
+                            SetPhase(EnemyPhase.Pursue);
+                        }
                         if (attackElapsed >= timeTillDamage && !damageDealt)
                         {
                             switch (attackType)
@@ -140,9 +145,9 @@ namespace UnityStandardAssets._2D
                 if (gapInFloor)
                 {
                     gapInFloor = Physics2D.Raycast(nextGroundCheck.position, Vector2.down, 10f, pCharacter.GetGroundLayer()).collider == null;
-                    Debug.Log(Physics2D.Raycast(nextGroundCheck.position, Vector2.down, 10f, pCharacter.GetGroundLayer()).collider);
                 }
-                bool wallInFront = Physics2D.OverlapCircle(nextWallCheck.position, checkRadius, pCharacter.GetGroundLayer()) != null;
+                //bool wallInFront = Physics2D.OverlapCircle(nextWallCheck.position, checkRadius, pCharacter.GetGroundLayer()) != null;
+                bool wallInFront = Physics2D.Raycast(nextWallCheck.position, Vector2.right * transform.localScale.x, 0.75f, pCharacter.GetGroundLayer()).collider != null;
                 jump = (gapInFloor || wallInFront);// && Physics2D.OverlapCircle(nextCeilingCheck.position, checkRadius, pCharacter.GetGroundLayer()) == null;
             }
 

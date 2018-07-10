@@ -9532,7 +9532,7 @@ MonoBehaviour:
   attackRoot: {fileID: 0}
   attackPrefab: {fileID: 0}
   pursueSpeed: 1.1
-  attackRange: 0.4
+  attackRange: 0.6
   attackDuration: 0.48
   timeTillDamage: 0.42
 --- !u!58 &1058619951
