@@ -24,18 +24,6 @@ public class Door : MonoBehaviour {
             text.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.X) )
-        {
-            Debug.Log("Press X to open!");
-            if(col.gameObject.tag == "Player")
-            {
-                anim.SetBool("FadeIn", true);
-                StartCoroutine(FadeTo());
-            }
-            
-
-        }
-
     }
 
     private void OnTriggerExit2D(Collider2D col)
@@ -48,18 +36,6 @@ public class Door : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D col)
     {
-        /* if(col.gameObject.tag == "Player")
-         {
-             Debug.Log("Press X to open!");
-
-             if (Input.GetKeyDown(KeyCode.X))
-             {
-                 anim.SetBool("FadeIn", true);
-                 StartCoroutine(FadeTo() );
-
-             }
-
-         }*/
 
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -69,7 +45,6 @@ public class Door : MonoBehaviour {
                 anim.SetBool("FadeIn", true);
                 StartCoroutine(FadeTo());
             }
-
 
         }
     }

@@ -18,6 +18,7 @@ public class ItemScript : MonoBehaviour
         pickUpTrigger = transform.Find("item_sprite").GetComponent<TriggerScript>();
     }
 
+    
     private void Update()
     {
         CheckForPickUp();
