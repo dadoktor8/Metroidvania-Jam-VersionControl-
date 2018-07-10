@@ -31,6 +31,19 @@ public class InventoryScript : MonoBehaviour
         return false;
     }
 
+    public bool ConsumeItemByName(string itemName)
+    {
+        for(int i = 0; i < inventory.Count; i++)
+        {
+            if(inventory[i].itemName == itemName)
+            {
+                inventory.RemoveAt(i);
+                return true;
+            }
+        }
+        return false;
+    }
+
     public List<ItemData> GetAllItems()
     {
         return inventory;
