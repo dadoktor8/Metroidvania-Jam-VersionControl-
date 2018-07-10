@@ -21,6 +21,16 @@ public class InventoryScript : MonoBehaviour
         return inventory.Contains(item);
     }
 
+    public bool CheckInventoryByName(string itemName)
+    {
+        for(int i = 0; i < inventory.Count; i++)
+        {
+            if (inventory[i].itemName == itemName)
+                return true;
+        }
+        return false;
+    }
+
     public List<ItemData> GetAllItems()
     {
         return inventory;
