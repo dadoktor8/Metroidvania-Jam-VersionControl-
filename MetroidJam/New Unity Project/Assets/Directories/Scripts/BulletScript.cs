@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlobmanBulletScript : MonoBehaviour
+public class BulletScript : MonoBehaviour
 {
     public float moveSpeed;
     private Vector2 moveDir;

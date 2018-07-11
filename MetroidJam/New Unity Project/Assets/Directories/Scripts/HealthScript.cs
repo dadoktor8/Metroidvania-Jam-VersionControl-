@@ -123,6 +123,11 @@ public class HealthScript : MonoBehaviour
         latestHitObj = null;
     }
 
+    public void DestroyGameObject()
+    {
+        Destroy(gameObject);
+    }
+
     #endregion Common Effects Functions
 }
 

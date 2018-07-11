@@ -42,6 +42,7 @@ namespace UnityStandardAssets._2D
         private EnemyPhase phase;
 
         private Animator animator;
+        private SpriteRenderer spriteRenderer;
         private PlatformerCharacter2D pCharacter;
 
         private void Awake()
@@ -49,6 +50,7 @@ namespace UnityStandardAssets._2D
             moveDir = Vector2.right;
 
             animator = GetComponent<Animator>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
             pCharacter = GetComponent<PlatformerCharacter2D>();
         }
 
@@ -59,6 +61,19 @@ namespace UnityStandardAssets._2D
 
         private void Update()
         {
+            if(!spriteRenderer.flipX)
+            {
+                nextGroundCheck.localPosition = new Vector3(Mathf.Abs(nextGroundCheck.localPosition.x), nextGroundCheck.localPosition.y, nextGroundCheck.localPosition.z);
+                nextWallCheck.localPosition = new Vector3(Mathf.Abs(nextWallCheck.localPosition.x), nextWallCheck.localPosition.y, nextWallCheck.localPosition.z);
+                nextCeilingCheck.localPosition = new Vector3(Mathf.Abs(nextCeilingCheck.localPosition.x), nextCeilingCheck.localPosition.y, nextCeilingCheck.localPosition.z);
+            }
+            else
+            {
+                nextGroundCheck.localPosition = new Vector3(-Mathf.Abs(nextGroundCheck.localPosition.x), nextGroundCheck.localPosition.y, nextGroundCheck.localPosition.z);
+                nextWallCheck.localPosition = new Vector3(-Mathf.Abs(nextWallCheck.localPosition.x), nextWallCheck.localPosition.y, nextWallCheck.localPosition.z);
+                nextCeilingCheck.localPosition = new Vector3(-Mathf.Abs(nextCeilingCheck.localPosition.x), nextCeilingCheck.localPosition.y, nextCeilingCheck.localPosition.z);
+            }
+
             switch (phase)
             {
                 case EnemyPhase.Spawn:
@@ -75,8 +90,9 @@ namespace UnityStandardAssets._2D
                             moveDir = -moveDir;
                         MoveTo((Vector2)transform.position + moveDir, patrolSpeed, false);
 
-                        RaycastHit2D viewScan = Physics2D.Raycast(transform.position, transform.localScale.x * Vector2.right, viewRange, LayerMask.GetMask("Player"));
-                        RaycastHit2D viewObstructScan = Physics2D.Raycast(transform.position, transform.localScale.x * Vector2.right, viewRange, LayerMask.GetMask("Ground"));
+                        Vector2 lookDir = (spriteRenderer.flipX) ? Vector2.left : Vector2.right;
+                        RaycastHit2D viewScan = Physics2D.Raycast(transform.position, lookDir, viewRange, LayerMask.GetMask("Player"));
+                        RaycastHit2D viewObstructScan = Physics2D.Raycast(transform.position, lookDir, viewRange, LayerMask.GetMask("Ground"));
                         bool unObstructedView = viewScan.collider != null && (viewObstructScan.collider == null || (viewObstructScan.collider != null && viewScan.distance < viewObstructScan.distance));
                         if (unObstructedView && viewScan.collider.gameObject.activeSelf)
                         {
@@ -93,7 +109,7 @@ namespace UnityStandardAssets._2D
                             return;
                         }
 
-                        MoveTo(attackTarget.transform.position + new Vector3((0.5f * transform.localScale.x), 0f, 0f), pursueSpeed, true);
+                        MoveTo(attackTarget.transform.position + new Vector3((0.5f * ((spriteRenderer.flipX) ? -1 : 1)), 0f, 0f), pursueSpeed, true);
 
                         if ((transform.position - attackTarget.transform.position).sqrMagnitude <= Mathf.Pow(attackRange, 2f))
                             SetPhase(EnemyPhase.Attack);
@@ -116,7 +132,7 @@ namespace UnityStandardAssets._2D
                                     break;
                                 case EnemyAttackType.Projectile:
                                     GameObject bullet = Instantiate(attackPrefab);
-                                    bullet.GetComponent<BlobmanBulletScript>().Activate(attackRoot.transform.position, new Vector2(transform.localScale.x, 0f));
+                                    bullet.GetComponent<BulletScript>().Activate(attackRoot.transform.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
                                     break;
                             }
                             damageDealt = true;
@@ -138,6 +154,7 @@ namespace UnityStandardAssets._2D
             else if (transform.position.x < targetPos.x)
                 move = 1f;
 
+            Vector2 lookDir = (spriteRenderer.flipX) ? Vector2.left : Vector2.right;
             bool jump = false;
             if(canJump)
             {
@@ -147,7 +164,7 @@ namespace UnityStandardAssets._2D
                     gapInFloor = Physics2D.Raycast(nextGroundCheck.position, Vector2.down, 10f, pCharacter.GetGroundLayer()).collider == null;
                 }
                 //bool wallInFront = Physics2D.OverlapCircle(nextWallCheck.position, checkRadius, pCharacter.GetGroundLayer()) != null;
-                bool wallInFront = Physics2D.Raycast(nextWallCheck.position, Vector2.right * transform.localScale.x, 0.75f, pCharacter.GetGroundLayer()).collider != null;
+                bool wallInFront = Physics2D.Raycast(nextWallCheck.position, lookDir, 0.75f, pCharacter.GetGroundLayer()).collider != null;
                 jump = (gapInFloor || wallInFront);// && Physics2D.OverlapCircle(nextCeilingCheck.position, checkRadius, pCharacter.GetGroundLayer()) == null;
             }
 
