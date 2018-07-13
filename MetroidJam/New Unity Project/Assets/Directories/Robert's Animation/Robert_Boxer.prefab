@@ -271,6 +271,12 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1930386948752358, guid: 8472c195502cf7844bb8201cad31d508,
     type: 2}
   shootCooldown: 0.25
+  meleeRange: 0.5
+  timeTillMeleeDamage: 0.5
+  meleeDuration: 1
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &114389079417144346
 MonoBehaviour:
   m_ObjectHideFlags: 1
