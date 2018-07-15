@@ -117,6 +117,12 @@ namespace UnityStandardAssets._2D
                     break;
                 case EnemyPhase.Attack:
                     {
+                        if (attackTarget == null || !attackTarget.gameObject.activeSelf)
+                        {
+                            SetPhase(EnemyPhase.Patrol);
+                            return;
+                        }
+
                         attackElapsed += Time.deltaTime;
                         if (attackType != EnemyAttackType.Projectile && (transform.position - attackTarget.transform.position).sqrMagnitude > Mathf.Pow(attackRange, 2f) && !damageDealt)
                         {
