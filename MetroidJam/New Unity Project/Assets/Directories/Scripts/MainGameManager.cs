@@ -6,6 +6,9 @@ public class MainGameManager : MonoBehaviour {
 
     public static MainGameManager instance;
 
+    
+
+
     #region Singleton
     private void Awake()
     {
@@ -25,8 +28,9 @@ public class MainGameManager : MonoBehaviour {
 
     [SerializeField]
     private InventoryScript Inventory;
+    [SerializeField]
+    FadeIn fadeScreen;
 
-    ItemData item;
 
     public bool IsObjectiveDone
     {
@@ -64,17 +68,36 @@ public class MainGameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        Objectives();
         
-        if (Inventory.ConsumeItemByName("Keys") )
+	}
+
+    void Objectives() // Where the Objectives trigger
+    { 
+
+        if (Inventory.ConsumeItemByName("Keys"))
         {
             Debug.Log("Keys are in Inventory!");
+            StartCoroutine(fadeScreen.FadeTo());
+        }
+
+        if (Inventory.ConsumeItemByName("Shower"))
+        {
+            Debug.Log("Whew! Nice bath!");
+            StartCoroutine(fadeScreen.FadeTo());
+        }
+
+        if (Inventory.ConsumeItemByName("Telephone"))
+        {
+            Debug.Log("I picked up the phone!");
         }
 
         if (IsObjectiveDone)
         {
             Debug.Log("Objective Complete!");
         }
-	}
+    }
 
 
 }

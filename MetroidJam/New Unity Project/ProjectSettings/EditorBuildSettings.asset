@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Directories/Scenes/Template/Template_EP_64.unity
+    guid: bbec9fef03f89b1428cf267799c70875
