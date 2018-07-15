@@ -21,7 +21,7 @@ TagManager:
   - Player
   - Ground
   - Enemy
-  - 
+  - Doors
   - 
   - 
   - 
@@ -51,6 +51,9 @@ TagManager:
     locked: 1
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Doors
+    uniqueID: 3885302145
     locked: 0
   - name: Enemy
     uniqueID: 1160564901
