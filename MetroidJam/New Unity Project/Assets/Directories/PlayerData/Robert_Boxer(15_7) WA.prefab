@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4236003750854216}
   m_Layer: 8
   m_Name: GroundCheck
-  m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,7 +46,7 @@ GameObject:
   - component: {fileID: 114105565839131628}
   - component: {fileID: 114535383537731026}
   m_Layer: 8
-  m_Name: Robert_Boxer(15_7)
+  m_Name: Robert_Boxer(15_7) WA
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,7 +361,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1477848862001884}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b34eb90943a8a5040b0791a791a6ae49, type: 3}
   m_Name: 
@@ -431,8 +430,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -70519557
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 6cc792934533445448432bbc242a7229, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -18,26 +18,28 @@ public class Door : MonoBehaviour {
 	}
 
     private void OnTriggerEnter2D(Collider2D col)
-    {
-        if(col.gameObject.tag == "Player")
-        {
-            text.SetActive(true);
-        }
+	{
 
-    }
+		if(col.gameObject.tag == "Player")
+		{
+			text.SetActive(true);
+		}
 
-    private void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
-            text.SetActive(false);
-        }
-    }
+	}
 
-    private void OnTriggerStay2D(Collider2D col)
-    {
+	private void OnTriggerExit2D(Collider2D col)
+	{
+		if (col.gameObject.tag == "Player")
+		{
+			text.SetActive(false);
+		}
+	}
 
-        if (Input.GetKeyDown(KeyCode.X))
+	private void OnTriggerStay2D(Collider2D col)
+	{
+
+		if (Input.GetKeyDown(KeyCode.X))
+       
         {
             Debug.Log("Press X to open!");
             if (col.gameObject.tag == "Player")
