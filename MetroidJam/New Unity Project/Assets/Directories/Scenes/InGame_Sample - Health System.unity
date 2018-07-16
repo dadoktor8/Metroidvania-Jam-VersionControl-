@@ -2311,6 +2311,21 @@ Prefab:
       propertyPath: hitTypeList.Array.data[0].hitValue
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 114313477752696672, guid: c05a9328272f78c43bcfe949db99208a,
+        type: 2}
+      propertyPath: shotgunRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313477752696672, guid: c05a9328272f78c43bcfe949db99208a,
+        type: 2}
+      propertyPath: pistolCooldown
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313477752696672, guid: c05a9328272f78c43bcfe949db99208a,
+        type: 2}
+      propertyPath: shotgunCooldown
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c05a9328272f78c43bcfe949db99208a, type: 2}
   m_IsPrefabParent: 0
