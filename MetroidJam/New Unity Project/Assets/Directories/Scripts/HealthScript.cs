@@ -97,6 +97,11 @@ public class HealthScript : MonoBehaviour
 
     #region Common Effects Functions
 
+    public GameObject GetLatestHitObject()
+    {
+        return latestHitObj.gameObject;
+    }
+
     public void FlashGameObject(GameObject flashObj)
     {
         StartCoroutine(FlashRoutine(flashObj));

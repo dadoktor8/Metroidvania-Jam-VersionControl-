@@ -50,7 +50,7 @@ public class PlayerAttackScript : MonoBehaviour
         if (Input.GetMouseButton(0) && shootElapsed < 0)
         {
             GameObject bullet = Instantiate(bulletPrefab);
-            bullet.GetComponent<BulletScript>().Activate(bulletSpawnRoot.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
+            bullet.GetComponent<BulletScript>().Activate(gameObject, bulletSpawnRoot.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
             shootElapsed = 0;
         }
     }
