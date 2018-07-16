@@ -7,8 +7,11 @@ public class BulletScript : MonoBehaviour
     public float moveSpeed;
     private Vector2 moveDir;
 
-    public void Activate(Vector3 pos, Vector2 dir)
+    private GameObject source;
+
+    public void Activate(GameObject aSource, Vector3 pos, Vector2 dir)
     {
+        source = aSource;
         transform.position = pos;
         transform.localScale = Vector3.one;
         if (dir == Vector2.left)
@@ -20,6 +23,11 @@ public class BulletScript : MonoBehaviour
     private void Update()
     {
         transform.Translate(moveDir * moveSpeed * Time.deltaTime);
+    }
+
+    public GameObject GetSource()
+    {
+        return source;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -15,7 +15,6 @@ namespace UnityStandardAssets._2D
         private Vector2 moveDir;
 
         [Header("Spawn Phase Settings")]
-        public EnemySpawnType spawnType;
         public float spawnWait;
 
         private float spawnElapsed;
@@ -36,6 +35,11 @@ namespace UnityStandardAssets._2D
         private GameObject attackTarget;
         private float attackElapsed;
         private bool damageDealt;
+
+        [Header("Death")]
+        public float deathDuration;
+
+        private float deathElapsed;
 
         private float checkRadius = .2f;
 
@@ -126,7 +130,6 @@ namespace UnityStandardAssets._2D
                         attackElapsed += Time.deltaTime;
                         if (attackType != EnemyAttackType.Projectile && (transform.position - attackTarget.transform.position).sqrMagnitude > Mathf.Pow(attackRange, 2f) && !damageDealt)
                         {
-                            animator.Play("EnemyIdle");
                             SetPhase(EnemyPhase.Pursue);
                         }
                         if (attackElapsed >= timeTillDamage && !damageDealt)
@@ -138,7 +141,7 @@ namespace UnityStandardAssets._2D
                                     break;
                                 case EnemyAttackType.Projectile:
                                     GameObject bullet = Instantiate(attackPrefab);
-                                    bullet.GetComponent<BulletScript>().Activate(attackRoot.transform.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
+                                    bullet.GetComponent<BulletScript>().Activate(gameObject, attackRoot.transform.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
                                     break;
                             }
                             damageDealt = true;
@@ -146,6 +149,11 @@ namespace UnityStandardAssets._2D
                         if (attackElapsed >= attackDuration)
                             SetPhase(EnemyPhase.Pursue);
                     }
+                    break;
+                case EnemyPhase.Dead:
+                    deathElapsed += Time.deltaTime;
+                    if (deathElapsed >= deathDuration)
+                        Destroy(gameObject);
                     break;
             }
         }
@@ -183,7 +191,7 @@ namespace UnityStandardAssets._2D
             switch (newPhase)
             {
                 case EnemyPhase.Spawn:
-                    animator.Play("EnemyEntry");
+                    //animator.Play("EnemyEntry");
                     spawnElapsed = 0f;
                     break;
                 case EnemyPhase.Patrol:
@@ -193,12 +201,34 @@ namespace UnityStandardAssets._2D
 
                     break;
                 case EnemyPhase.Attack:
-                    animator.Play("EnemyAttack");
+                    animator.SetTrigger("Attack");
                     attackElapsed = 0;
                     damageDealt = false;
                     break;
+                case EnemyPhase.Dead:
+                    animator.SetTrigger("Death");
+                    deathElapsed = 0;
+                    break;
             }
             phase = newPhase;
+        }
+
+        public void AlertEnemy()
+        {
+            if (phase == EnemyPhase.Patrol)
+            {
+                GameObject hitObj = GetComponent<HealthScript>().GetLatestHitObject();
+                if (hitObj.tag == "Player")
+                    attackTarget = hitObj;
+                else if(hitObj.tag == "PlayerBullet")
+                    attackTarget = GetComponent<HealthScript>().GetLatestHitObject().GetComponent<BulletScript>().GetSource();
+                SetPhase(EnemyPhase.Pursue);
+            }
+        }
+
+        public void KillEnemy()
+        {
+            SetPhase(EnemyPhase.Dead);
         }
     }
 }
@@ -208,18 +238,12 @@ public enum EnemyPhase
     Spawn,
     Patrol,
     Pursue,
-    Attack
+    Attack,
+    Dead
 }
 
 public enum EnemyAttackType
 {
     Melee,
     Projectile
-}
-
-public enum EnemySpawnType
-{
-    Random,
-    SpawnOnSight,
-    SpawnPatrol
 }

@@ -5,12 +5,18 @@ using UnityStandardAssets._2D;
 
 public class PlayerAttackScript : MonoBehaviour
 {
-    [Header("Ranged")]
+    [Header("Ranged (Pistol)")]
     public Transform bulletSpawnRoot;
     public GameObject bulletPrefab;
-    public float shootCooldown;
+    public float pistolCooldown;
 
-    private float shootElapsed = -5;
+    private float pistolElapsed = -5;
+
+    [Header("Ranged (Shotgun)")]
+    public float shotgunRange;
+    public float shotgunCooldown;
+
+    private float shotgunElapsed = -5;
 
     [Header("Melee")]
     public float meleeRange;
@@ -34,24 +40,46 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void Update()
     {
-        PerformShoot();
+        PerformPistolShoot();
+        PerformShotgunShoot();
         PerformMelee();
     }
 
-    private void PerformShoot()
+    private void PerformPistolShoot()
     {
-        if (shootElapsed >= 0)
+        if (pistolElapsed >= 0)
         {
-            shootElapsed += Time.deltaTime;
-            if (shootElapsed >= shootCooldown)
-                shootElapsed = -5;
+            pistolElapsed += Time.deltaTime;
+            if (pistolElapsed >= pistolCooldown)
+                pistolElapsed = -5;
         }
 
-        if (Input.GetMouseButton(0) && shootElapsed < 0)
+        if (Input.GetMouseButton(0) && pistolElapsed < 0)
         {
             GameObject bullet = Instantiate(bulletPrefab);
-            bullet.GetComponent<BulletScript>().Activate(bulletSpawnRoot.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
-            shootElapsed = 0;
+            bullet.GetComponent<BulletScript>().Activate(gameObject, bulletSpawnRoot.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
+            pistolElapsed = 0;
+        }
+    }
+
+    private void PerformShotgunShoot()
+    {
+        if (shotgunElapsed >= 0)
+        {
+            shotgunElapsed += Time.deltaTime;
+            if (shotgunElapsed >= shotgunCooldown)
+                shotgunElapsed = -5;
+        }
+
+        if (Input.GetMouseButton(1) && shotgunElapsed < 0)
+        {
+            Vector2 lookDir = new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f);
+            RaycastHit2D[] hitList = Physics2D.RaycastAll(transform.position, lookDir, shotgunRange, enemyLayer);
+            for(int i = 0; i < hitList.Length; i++)
+            {
+                hitList[i].collider.GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), "PlayerShotgun");
+            }
+            shotgunElapsed = 0;
         }
     }
 
