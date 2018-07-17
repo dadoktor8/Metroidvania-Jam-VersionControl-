@@ -116,7 +116,14 @@ public class HealthScript : MonoBehaviour
 
     public void KnockBack(float force)
     {
-        //GetComponent<PhysicsObject>().AddForce((transform.position - latestHitObj.transform.position).normalized * force);
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if(rb != null)
+        {
+            Vector2 forceVector = new Vector2();
+            forceVector.x = (transform.position - latestHitObj.transform.position).normalized.x;
+            forceVector.y = 0.35f;
+            rb.AddForce(forceVector * force);
+        }
     }
 
     public void RemoveHitObject(bool isDestroy)
