@@ -36,9 +36,11 @@ namespace UnityStandardAssets._2D
         private float attackElapsed;
         private bool damageDealt;
 
-        [Header("Death")]
+        [Header("Hurt and Death")]
+        public float hurtDuration;
         public float deathDuration;
 
+        private float hurtElapsed;
         private float deathElapsed;
 
         private float checkRadius = .2f;
@@ -77,6 +79,8 @@ namespace UnityStandardAssets._2D
                 nextWallCheck.localPosition = new Vector3(-Mathf.Abs(nextWallCheck.localPosition.x), nextWallCheck.localPosition.y, nextWallCheck.localPosition.z);
                 nextCeilingCheck.localPosition = new Vector3(-Mathf.Abs(nextCeilingCheck.localPosition.x), nextCeilingCheck.localPosition.y, nextCeilingCheck.localPosition.z);
             }
+            if (hurtElapsed >= 0)
+                hurtElapsed += Time.deltaTime;
 
             switch (phase)
             {
@@ -160,6 +164,13 @@ namespace UnityStandardAssets._2D
 
         private void MoveTo(Vector2 targetPos, float speed, bool canJump)
         {
+            if (hurtElapsed >= 0 && hurtElapsed < hurtDuration)
+                return;
+            else if(hurtElapsed >= hurtDuration)
+            {
+                hurtElapsed = -5f;
+            }
+
             pCharacter.SetMaxSpeed(speed);
 
             float move = 0;
@@ -229,6 +240,11 @@ namespace UnityStandardAssets._2D
         public void KillEnemy()
         {
             SetPhase(EnemyPhase.Dead);
+        }
+
+        public void HurtEnemy()
+        {
+            hurtElapsed = 0;
         }
     }
 }
