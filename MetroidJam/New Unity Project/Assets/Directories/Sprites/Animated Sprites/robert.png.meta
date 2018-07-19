@@ -91,6 +91,79 @@ TextureImporter:
     21300168: RobertFC(T.S)_1
     21300170: robert_85
     21300172: robert_86
+    21300174: robert_2
+    21300176: robert_3
+    21300178: robert_4
+    21300180: robert_5
+    21300182: robert_6
+    21300184: robert_7
+    21300186: robert_8
+    21300188: robert_9
+    21300190: robert_10
+    21300192: robert_11
+    21300194: robert_12
+    21300196: robert_13
+    21300198: robert_14
+    21300200: robert_15
+    21300202: robert_16
+    21300204: robert_17
+    21300206: robert_19
+    21300208: robert_20
+    21300210: robert_21
+    21300212: robert_22
+    21300214: robert_23
+    21300216: robert_24
+    21300218: robert_29
+    21300220: robert_30
+    21300222: robert_31
+    21300224: robert_32
+    21300226: robert_35
+    21300228: robert_36
+    21300230: robert_37
+    21300232: robert_39
+    21300234: robert_40
+    21300236: robert_41
+    21300238: robert_42
+    21300240: robert_43
+    21300242: robert_44
+    21300244: robert_45
+    21300246: robert_46
+    21300248: robert_47
+    21300250: robert_48
+    21300252: robert_49
+    21300254: robert_50
+    21300256: robert_51
+    21300258: robert_52
+    21300260: robert_53
+    21300262: robert_54
+    21300264: robert_55
+    21300266: robert_56
+    21300268: robert_57
+    21300270: robert_58
+    21300272: robert_59
+    21300274: robert_60
+    21300276: robert_61
+    21300278: robert_62
+    21300280: robert_63
+    21300282: robert_64
+    21300284: robert_65
+    21300286: robert_66
+    21300288: robert_67
+    21300290: robert_68
+    21300292: robert_69
+    21300294: robert_70
+    21300296: robert_71
+    21300298: robert_72
+    21300300: robert_73
+    21300302: robert_74
+    21300304: robert_75
+    21300306: robert_76
+    21300308: robert_79
+    21300310: robert_80
+    21300312: robert_84
+    21300314: robert_87
+    21300316: robert_88
+    21300318: robert_89
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -132,7 +205,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -164,6 +237,26 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -171,12 +264,12 @@ TextureImporter:
       name: robert_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 704
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,236 +278,236 @@ TextureImporter:
       name: robert_1
       rect:
         serializedVersion: 2
-        x: 87
+        x: 64
         y: 704
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_1
+      name: robert_2
       rect:
         serializedVersion: 2
-        x: 151
-        y: 703
-        width: 25
-        height: 57
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobertFC(Idle)_2
-      rect:
-        serializedVersion: 2
-        x: 214
+        x: 128
         y: 704
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_3
+      name: robert_3
       rect:
         serializedVersion: 2
-        x: 279
+        x: 192
         y: 704
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_4
+      name: robert_4
       rect:
         serializedVersion: 2
-        x: 343
+        x: 256
         y: 704
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_5
+      name: robert_5
       rect:
         serializedVersion: 2
-        x: 407
+        x: 320
         y: 704
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_6
+      name: robert_6
       rect:
         serializedVersion: 2
-        x: 471
+        x: 384
         y: 704
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_7
+      name: robert_7
       rect:
         serializedVersion: 2
-        x: 24
+        x: 448
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_8
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 640
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_8
+      name: robert_9
       rect:
         serializedVersion: 2
-        x: 87
+        x: 64
         y: 640
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_9
+      name: robert_10
       rect:
         serializedVersion: 2
-        x: 151
+        x: 128
         y: 640
-        width: 25
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_10
+      name: robert_11
       rect:
         serializedVersion: 2
-        x: 215
+        x: 192
         y: 640
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_11
+      name: robert_12
       rect:
         serializedVersion: 2
-        x: 279
+        x: 256
         y: 640
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_12
+      name: robert_13
       rect:
         serializedVersion: 2
-        x: 343
+        x: 320
         y: 640
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_13
+      name: robert_14
       rect:
         serializedVersion: 2
-        x: 407
+        x: 384
         y: 640
-        width: 25
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_14
+      name: robert_15
       rect:
         serializedVersion: 2
-        x: 471
+        x: 448
         y: 640
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_15
+      name: robert_16
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 576
-        width: 25
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Idle)_16
+      name: robert_17
       rect:
         serializedVersion: 2
-        x: 87
+        x: 64
         y: 576
-        width: 25
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -423,96 +516,96 @@ TextureImporter:
       name: robert_18
       rect:
         serializedVersion: 2
-        x: 151
+        x: 128
         y: 576
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Walk)_1
+      name: robert_19
       rect:
         serializedVersion: 2
-        x: 215
+        x: 192
         y: 576
-        width: 24
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Walk)_2
+      name: robert_20
       rect:
         serializedVersion: 2
-        x: 282
+        x: 256
         y: 576
-        width: 17
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Walk)_3
+      name: robert_21
       rect:
         serializedVersion: 2
-        x: 343
-        y: 575
-        width: 26
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobertFC(Walk)_4
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 575
-        width: 27
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobertFC(Walk)_5
-      rect:
-        serializedVersion: 2
-        x: 474
+        x: 320
         y: 576
-        width: 16
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Walk)_6
+      name: robert_22
       rect:
         serializedVersion: 2
-        x: 24
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_24
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 512
-        width: 27
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -521,12 +614,12 @@ TextureImporter:
       name: robert_25
       rect:
         serializedVersion: 2
-        x: 87
+        x: 64
         y: 512
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,12 +628,12 @@ TextureImporter:
       name: robert_26
       rect:
         serializedVersion: 2
-        x: 151
+        x: 128
         y: 512
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -549,12 +642,12 @@ TextureImporter:
       name: robert_27
       rect:
         serializedVersion: 2
-        x: 215
+        x: 192
         y: 512
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -563,68 +656,68 @@ TextureImporter:
       name: robert_28
       rect:
         serializedVersion: 2
-        x: 279
+        x: 256
         y: 512
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Item_PickUP)_1
+      name: robert_29
       rect:
         serializedVersion: 2
-        x: 343
+        x: 320
         y: 512
-        width: 32
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Item_PickUP)_2
+      name: robert_30
       rect:
         serializedVersion: 2
-        x: 407
+        x: 384
         y: 512
-        width: 39
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Item_PickUP)_3
+      name: robert_31
       rect:
         serializedVersion: 2
-        x: 471
+        x: 448
         y: 512
-        width: 39
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Item_PickUP)_4
+      name: robert_32
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 448
-        width: 31
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -633,12 +726,12 @@ TextureImporter:
       name: robert_33
       rect:
         serializedVersion: 2
-        x: 87
+        x: 64
         y: 448
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -647,54 +740,54 @@ TextureImporter:
       name: robert_34
       rect:
         serializedVersion: 2
-        x: 151
+        x: 128
         y: 448
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Crouch)_1
+      name: robert_35
       rect:
         serializedVersion: 2
-        x: 216
+        x: 192
         y: 448
-        width: 27
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Crouch)_2
+      name: robert_36
       rect:
         serializedVersion: 2
-        x: 284
+        x: 256
         y: 448
-        width: 31
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Crouch)_3
+      name: robert_37
       rect:
         serializedVersion: 2
-        x: 345
+        x: 320
         y: 448
-        width: 32
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -703,544 +796,544 @@ TextureImporter:
       name: robert_38
       rect:
         serializedVersion: 2
-        x: 407
+        x: 384
         y: 448
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(CrouchPickUP)_1
+      name: robert_39
       rect:
         serializedVersion: 2
-        x: 472
+        x: 448
         y: 448
-        width: 27
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(CrouchPickUP)_2
+      name: robert_40
       rect:
         serializedVersion: 2
-        x: 28
-        y: 380
-        width: 29
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobertFC(CrouchPickUP)_3
-      rect:
-        serializedVersion: 2
-        x: 89
+        x: 0
         y: 384
-        width: 31
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_1
+      name: robert_41
       rect:
         serializedVersion: 2
-        x: 129
+        x: 64
         y: 384
-        width: 42
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_2
+      name: robert_42
       rect:
         serializedVersion: 2
-        x: 193
+        x: 128
         y: 384
-        width: 47
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_3
+      name: robert_43
       rect:
         serializedVersion: 2
-        x: 257
+        x: 192
         y: 384
-        width: 59
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_4
+      name: robert_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_45
       rect:
         serializedVersion: 2
         x: 320
         y: 384
-        width: 55
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_5
+      name: robert_46
       rect:
         serializedVersion: 2
         x: 384
         y: 384
-        width: 51
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_6
+      name: robert_47
       rect:
         serializedVersion: 2
         x: 448
         y: 384
-        width: 49
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_7
+      name: robert_48
       rect:
         serializedVersion: 2
         x: 0
         y: 320
-        width: 49
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_8
+      name: robert_49
       rect:
         serializedVersion: 2
         x: 64
-        y: 321
-        width: 55
-        height: 56
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_9
+      name: robert_50
       rect:
         serializedVersion: 2
         x: 128
         y: 320
-        width: 57
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Run)_10
+      name: robert_51
       rect:
         serializedVersion: 2
-        x: 193
+        x: 192
         y: 320
-        width: 56
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolIdle)_1
+      name: robert_52
       rect:
         serializedVersion: 2
-        x: 279
+        x: 256
         y: 320
-        width: 41
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(ShotgunIdle)_1
+      name: robert_53
       rect:
         serializedVersion: 2
-        x: 342
+        x: 320
         y: 320
-        width: 40
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_1
+      name: robert_54
       rect:
         serializedVersion: 2
-        x: 385
+        x: 384
         y: 320
-        width: 62
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_2
+      name: robert_55
       rect:
         serializedVersion: 2
-        x: 449
+        x: 448
         y: 320
-        width: 61
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_3
+      name: robert_56
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 256
-        width: 62
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_4
+      name: robert_57
       rect:
         serializedVersion: 2
         x: 64
         y: 256
         width: 64
-        height: 57
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_5
+      name: robert_58
       rect:
         serializedVersion: 2
         x: 128
         y: 256
-        width: 63
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_6
+      name: robert_59
       rect:
         serializedVersion: 2
         x: 192
         y: 256
-        width: 63
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_7
+      name: robert_60
       rect:
         serializedVersion: 2
         x: 256
         y: 256
-        width: 62
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_8
+      name: robert_61
       rect:
         serializedVersion: 2
         x: 320
-        y: 257
-        width: 63
-        height: 56
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_9
+      name: robert_62
       rect:
         serializedVersion: 2
         x: 384
         y: 256
-        width: 63
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(PistolRun)_10
+      name: robert_63
       rect:
         serializedVersion: 2
-        x: 449
+        x: 448
         y: 256
-        width: 62
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(ShotgunRun)_1
+      name: robert_64
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 192
-        width: 63
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(ShotgunRun)_2
+      name: robert_65
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 192
-        width: 63
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(ShotgunRun)_3
+      name: robert_66
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 192
-        width: 63
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(ShotgunRun)_4
+      name: robert_67
       rect:
         serializedVersion: 2
         x: 192
         y: 192
         width: 64
-        height: 57
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(ShotgunRun)_5
+      name: robert_68
       rect:
         serializedVersion: 2
         x: 256
         y: 192
         width: 64
-        height: 58
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(ShotgunRun)_6
+      name: robert_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_71
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_72
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 64
-        height: 57
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(ShotgunRun)_7
+      name: robert_73
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 128
-        width: 63
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Meele)_1
+      name: robert_74
       rect:
         serializedVersion: 2
-        x: 146
+        x: 128
         y: 128
-        width: 36
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Meele)_2
+      name: robert_75
       rect:
         serializedVersion: 2
-        x: 215
+        x: 192
         y: 128
-        width: 41
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Meele)_3
+      name: robert_76
       rect:
         serializedVersion: 2
-        x: 276
+        x: 256
         y: 128
-        width: 35
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobertFC(Meele)_4
-      rect:
-        serializedVersion: 2
-        x: 345
-        y: 128
-        width: 30
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobertFC(Smash)_2
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 128
-        width: 35
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobertFC(Smash)_1
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 129
-        width: 40
-        height: 57
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1249,12 +1342,12 @@ TextureImporter:
       name: robert_77
       rect:
         serializedVersion: 2
-        x: 11
-        y: 64
-        width: 33
-        height: 58
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1263,40 +1356,40 @@ TextureImporter:
       name: robert_78
       rect:
         serializedVersion: 2
-        x: 82
-        y: 64
-        width: 27
-        height: 58
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Smash)_3
+      name: robert_79
       rect:
         serializedVersion: 2
-        x: 138
-        y: 64
-        width: 47
-        height: 61
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(Smash)_4
+      name: robert_80
       rect:
         serializedVersion: 2
-        x: 201
+        x: 0
         y: 64
-        width: 46
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1305,12 +1398,12 @@ TextureImporter:
       name: robert_81
       rect:
         serializedVersion: 2
-        x: 272
+        x: 64
         y: 64
-        width: 39
-        height: 38
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1319,12 +1412,12 @@ TextureImporter:
       name: robert_82
       rect:
         serializedVersion: 2
-        x: 343
+        x: 128
         y: 64
-        width: 32
-        height: 38
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1333,26 +1426,26 @@ TextureImporter:
       name: robert_83
       rect:
         serializedVersion: 2
-        x: 407
+        x: 192
         y: 64
-        width: 25
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RobertFC(T.S)_1
+      name: robert_84
       rect:
         serializedVersion: 2
-        x: 464
+        x: 256
         y: 64
-        width: 31
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1361,12 +1454,12 @@ TextureImporter:
       name: robert_85
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 31
-        height: 58
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1375,12 +1468,54 @@ TextureImporter:
       name: robert_86
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 31
-        height: 58
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_87
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: robert_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

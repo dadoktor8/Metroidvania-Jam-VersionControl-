@@ -109,8 +109,8 @@ public class MainGameManager : MonoBehaviour {
         if (Inventory.ConsumeItemByName("Telephone"))
         {
             Debug.Log("I picked up the phone!");
-            RemoveObjective("TelephoneObjective");
-            ///NextObjective("KeysObjective");
+           // RemoveObjective("TelephoneObjective");
+            //NextObjective("KeysObjective");
         }
 
         if (IsObjectiveDone)
@@ -121,30 +121,12 @@ public class MainGameManager : MonoBehaviour {
 
     void NextObjective(string obj)
     {
-        for (int i = 0; i < ObjectivesList.Count; i++)
-        {
-            if (ObjectivesList[i].name == obj)
-            {
-                ObjectivesList[i].SetActive(true);
-                
-            }
-
-            
-        }
-        
+         ObjectivesList[objectiveID].SetActive(true);
     }
 
-    void RemoveObjective(string obj)// Get a Runtime Error!
+    void RemoveObjective(string obj)
     {
-        for (int i = 0; i < ObjectivesList.Count; i++)
-        {
-            if (ObjectivesList[i].name == obj)
-            {
-                Debug.Log(ObjectivesList[i].name);
-                ObjectivesList.RemoveAt(i);
-            }
-        }
-
+        ObjectivesList.RemoveAt(objectiveID);
     }
 
 }
