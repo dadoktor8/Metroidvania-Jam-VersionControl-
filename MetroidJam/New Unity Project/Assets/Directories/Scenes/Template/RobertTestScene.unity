@@ -2385,7 +2385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1477848862001884, guid: 737e2cee1e85713488c6111c6edd3024, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 737e2cee1e85713488c6111c6edd3024, type: 2}
@@ -7902,7 +7902,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4732108022003848, guid: eb8617d160971304b85ac01e06c9d0b0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.16
+      value: -1.01
       objectReference: {fileID: 0}
     - target: {fileID: 4732108022003848, guid: eb8617d160971304b85ac01e06c9d0b0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7948,7 +7948,18 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 58581374871828090, guid: eb8617d160971304b85ac01e06c9d0b0,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.12968709
+      objectReference: {fileID: 0}
+    - target: {fileID: 58581374871828090, guid: eb8617d160971304b85ac01e06c9d0b0,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.09212057
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114689795828619732, guid: eb8617d160971304b85ac01e06c9d0b0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: eb8617d160971304b85ac01e06c9d0b0, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &534020219
@@ -8578,6 +8589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ca44e2d39e87a488dafb6742e6933e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjectivesList: []
   isObjectiveDone: 0
   objectiveID: 0
   Inventory: {fileID: 167348426}
