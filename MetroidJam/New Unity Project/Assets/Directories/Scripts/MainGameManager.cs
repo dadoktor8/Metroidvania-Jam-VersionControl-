@@ -76,6 +76,12 @@ public class MainGameManager : MonoBehaviour {
 	void Update () {
 
         Objectives();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Quiting...");
+        }
         
 	}
 
