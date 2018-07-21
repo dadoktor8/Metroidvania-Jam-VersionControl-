@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainGameManager : MonoBehaviour {
 
@@ -115,7 +116,8 @@ public class MainGameManager : MonoBehaviour {
         if (Inventory.ConsumeItemByName("Telephone"))
         {
             Debug.Log("I picked up the phone!");
-           // RemoveObjective("TelephoneObjective");
+            RemoveObjective("TelephoneObjective");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             //NextObjective("KeysObjective");
         }
 
