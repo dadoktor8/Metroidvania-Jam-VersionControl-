@@ -6,6 +6,7 @@ using UnityStandardAssets._2D;
 public class PlayerAttackScript : MonoBehaviour
 {
     [Header("Ranged (Pistol)")]
+    public bool enablePistol;
     public Transform bulletSpawnRoot;
     public GameObject bulletPrefab;
     public float pistolCooldown;
@@ -13,12 +14,15 @@ public class PlayerAttackScript : MonoBehaviour
     private float pistolElapsed = -5;
 
     [Header("Ranged (Shotgun)")]
+    public bool enableShotgun;
     public float shotgunRange;
     public float shotgunCooldown;
+    public ParticleSystem shotgunParticles;
 
     private float shotgunElapsed = -5;
 
     [Header("Melee")]
+    public bool enableMelee;
     public float meleeRange;
     public float timeTillMeleeDamage;
     public float meleeDuration;
@@ -40,13 +44,18 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void Update()
     {
-        PerformPistolShoot();
-        PerformShotgunShoot();
-        PerformMelee();
+        if(enablePistol)
+            PerformPistolShoot();
+        if(enableShotgun)
+            PerformShotgunShoot();
+        if(enableMelee)
+            PerformMelee();
     }
 
     private void PerformPistolShoot()
     {
+        animator.SetBool("pistolUse", Input.GetMouseButton(0));
+
         if (pistolElapsed >= 0)
         {
             pistolElapsed += Time.deltaTime;
@@ -57,6 +66,8 @@ public class PlayerAttackScript : MonoBehaviour
         if (Input.GetMouseButton(0) && pistolElapsed < 0)
         {
             GameObject bullet = Instantiate(bulletPrefab);
+            float spawnXPos = Mathf.Abs(bulletSpawnRoot.localPosition.x) * ((spriteRenderer.flipX) ? -1 : 1);
+            bulletSpawnRoot.localPosition = new Vector3(spawnXPos, bulletSpawnRoot.localPosition.y, bulletSpawnRoot.localPosition.z);
             bullet.GetComponent<BulletScript>().Activate(gameObject, bulletSpawnRoot.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
             pistolElapsed = 0;
         }
@@ -64,6 +75,8 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void PerformShotgunShoot()
     {
+        animator.SetBool("shotgunUse", Input.GetMouseButton(1));
+
         if (shotgunElapsed >= 0)
         {
             shotgunElapsed += Time.deltaTime;
@@ -80,6 +93,11 @@ public class PlayerAttackScript : MonoBehaviour
                 hitList[i].collider.GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), "PlayerShotgun");
             }
             shotgunElapsed = 0;
+
+            float spawnXPos = Mathf.Abs(shotgunParticles.transform.localPosition.x) * ((spriteRenderer.flipX) ? -1 : 1);
+            shotgunParticles.transform.localPosition = new Vector3(spawnXPos, shotgunParticles.transform.localPosition.y, shotgunParticles.transform.localPosition.z);
+            shotgunParticles.transform.localScale = new Vector3(1f, 1f, ((spriteRenderer.flipX) ? -1 : 1));
+            shotgunParticles.Play();
         }
     }
 
@@ -87,10 +105,11 @@ public class PlayerAttackScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.F) && meleeElapsed < 0)
         {
-            //platformer2DUserControl.enabled = false;
+            platformer2DUserControl.enabled = false;
             animator.SetFloat("Speed", 0);
             meleeElapsed = 0;
             damageDealt = false;
+            animator.SetTrigger("meleeUse");
         }
         if (meleeElapsed >= 0)
         {
@@ -109,7 +128,7 @@ public class PlayerAttackScript : MonoBehaviour
             if (meleeElapsed >= meleeDuration)
             {
                 meleeElapsed = -5;
-                //platformer2DUserControl.enabled = true;
+                platformer2DUserControl.enabled = true;
             }
         }
     }
