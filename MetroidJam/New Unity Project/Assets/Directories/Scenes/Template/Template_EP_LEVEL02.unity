@@ -4499,29 +4499,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 224498306716375440, guid: 3879109a2996b7f4a86467737c026dab,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.002632141
-      objectReference: {fileID: 0}
-    - target: {fileID: 224498306716375440, guid: 3879109a2996b7f4a86467737c026dab,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.001449585
-      objectReference: {fileID: 0}
-    - target: {fileID: 4535283061573950, guid: 3879109a2996b7f4a86467737c026dab, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4535283061573950, guid: 3879109a2996b7f4a86467737c026dab, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 212342952832266848, guid: 3879109a2996b7f4a86467737c026dab,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3879109a2996b7f4a86467737c026dab, type: 2}
   m_IsPrefabParent: 0
@@ -14320,29 +14297,6 @@ Prefab:
     - target: {fileID: 4985971419928044, guid: 5403d847a7ae8e64989960171f140890, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212437110487691092, guid: 5403d847a7ae8e64989960171f140890,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 224193656614344944, guid: 5403d847a7ae8e64989960171f140890,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.002632141
-      objectReference: {fileID: 0}
-    - target: {fileID: 224193656614344944, guid: 5403d847a7ae8e64989960171f140890,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.001449585
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985971419928044, guid: 5403d847a7ae8e64989960171f140890, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985971419928044, guid: 5403d847a7ae8e64989960171f140890, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5403d847a7ae8e64989960171f140890, type: 2}
