@@ -6315,6 +6315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb643ed8b26e1f468794b9e6dea9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   currentGrid: {fileID: 1212213921}
   nextGrid: {fileID: 1925415987}
   fadeWait: 0.7
@@ -10382,7 +10383,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 2.841566
+  orthographic size: 2.95
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -10581,6 +10582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb643ed8b26e1f468794b9e6dea9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   currentGrid: {fileID: 1925415987}
   nextGrid: {fileID: 1212213921}
   fadeWait: 0.7
@@ -11171,6 +11173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb643ed8b26e1f468794b9e6dea9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   currentGrid: {fileID: 1190383075}
   nextGrid: {fileID: 1925415987}
   fadeWait: 0.7
@@ -11287,6 +11290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb643ed8b26e1f468794b9e6dea9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   currentGrid: {fileID: 1925415987}
   nextGrid: {fileID: 1190383075}
   fadeWait: 0.7
@@ -11425,7 +11429,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: cef9315c2b947fe4fa26e9ad1aeb60b4, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11433,7 +11437,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1 &1135885041
 GameObject:
@@ -20262,6 +20266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb643ed8b26e1f468794b9e6dea9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   currentGrid: {fileID: 1925415987}
   nextGrid: {fileID: 559342782}
   fadeWait: 0.7
@@ -22483,6 +22488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb643ed8b26e1f468794b9e6dea9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   currentGrid: {fileID: 559342782}
   nextGrid: {fileID: 1925415987}
   fadeWait: 0.7
