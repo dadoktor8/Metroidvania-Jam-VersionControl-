@@ -45,6 +45,8 @@ public class HealthScript : MonoBehaviour
 
     public void ProcessHit(HitType hitType)
     {
+        if (currHealth <= 0)
+            return;
         ProcessHit(hitType.hitValue);
         hitType.onHit.Invoke();
         if (currHealth <= 0)
@@ -53,6 +55,8 @@ public class HealthScript : MonoBehaviour
 
     public void ProcessHit(float hitValue)
     {
+        if (currHealth <= 0)
+            return;
         currHealth += hitValue;
         currHealth = Mathf.Clamp(currHealth, 0f, totalHealth);
         UpdateHealthDisplay();
@@ -92,7 +96,8 @@ public class HealthScript : MonoBehaviour
 
     public void UpdateHealthDisplay()
     {
-        healthBar.fillAmount = currHealth / totalHealth;
+        if(healthBar != null)
+            healthBar.fillAmount = currHealth / totalHealth;
     }
 
     #region Common Effects Functions

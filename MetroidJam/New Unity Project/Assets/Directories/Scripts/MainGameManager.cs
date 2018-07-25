@@ -21,13 +21,13 @@ public class MainGameManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
     }
     #endregion
     [SerializeField]
     private bool isObjectiveDone;
     [SerializeField]
     private int objectiveID = 0;
-
     [SerializeField]
     private InventoryScript Inventory;
     [SerializeField]
@@ -48,6 +48,8 @@ public class MainGameManager : MonoBehaviour {
         }
     }
 
+    
+
     public int ObjectiveID
     {
 
@@ -63,14 +65,10 @@ public class MainGameManager : MonoBehaviour {
 
     }
     // Use this for initialization
+    
     void Start()
     {
 
-
-        for (int i = 1; i < ObjectivesList.Count; i++)
-        {
-           // ObjectivesList[i].SetActive(false);
-        }
     }
 	
 	// Update is called once per frame
