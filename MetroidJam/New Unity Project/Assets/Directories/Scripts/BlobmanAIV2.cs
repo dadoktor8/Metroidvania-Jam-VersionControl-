@@ -86,9 +86,15 @@ namespace UnityStandardAssets._2D
             {
                 case EnemyPhase.Spawn:
                     {
-                        spawnElapsed += Time.deltaTime;
-                        if (spawnElapsed >= spawnWait)
-                            SetPhase(EnemyPhase.Patrol);
+                        if(animator.speed > 0)
+                        {
+                            spawnElapsed += Time.deltaTime;
+                            if (spawnElapsed >= spawnWait)
+                                SetPhase(EnemyPhase.Patrol);
+                        }
+
+                        if (ViewableInCamera() && animator.speed <= 0)
+                            animator.speed = 1;
                     }
                     break;
                 case EnemyPhase.Patrol:
@@ -213,6 +219,7 @@ namespace UnityStandardAssets._2D
                 case EnemyPhase.Spawn:
                     //animator.Play("EnemyEntry");
                     spawnElapsed = 0f;
+                    animator.speed = 0;
                     break;
                 case EnemyPhase.Patrol:
 
@@ -254,6 +261,21 @@ namespace UnityStandardAssets._2D
         public void HurtEnemy()
         {
             hurtElapsed = 0;
+        }
+
+        private bool ViewableInCamera()
+        {
+            Vector2 spriteExtents = spriteRenderer.bounds.extents;
+
+            Vector2 camExtents = new Vector2();
+            camExtents.y = Camera.main.orthographicSize;
+            camExtents.x = camExtents.y / Screen.height * Screen.width;
+
+            Vector2 posDiff = Camera.main.transform.position - transform.position;
+
+            if (Mathf.Abs(posDiff.x) < camExtents.x + spriteExtents.x && Mathf.Abs(posDiff.y) < camExtents.y + spriteExtents.y)
+                return true;
+            return false;
         }
     }
 }

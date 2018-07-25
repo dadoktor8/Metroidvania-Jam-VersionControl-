@@ -61,8 +61,6 @@ public class PlayerAttackScript : MonoBehaviour
             {
                 overallElapsed = -5;
             }
-            else
-                return;
         }
 
         if(enablePistol)
@@ -86,7 +84,7 @@ public class PlayerAttackScript : MonoBehaviour
                 pistolElapsed = -5;
         }
 
-        if (Input.GetMouseButton(0) && pistolElapsed < 0)
+        if (Input.GetMouseButton(0) && pistolElapsed < 0 && overallElapsed < 0)
         {
             GameObject bullet = Instantiate(bulletPrefab);
             float spawnXPos = Mathf.Abs(bulletSpawnRoot.localPosition.x) * ((spriteRenderer.flipX) ? -1 : 1);
@@ -108,7 +106,7 @@ public class PlayerAttackScript : MonoBehaviour
                 shotgunElapsed = -5;
         }
 
-        if (Input.GetMouseButton(1) && shotgunElapsed < 0)
+        if (Input.GetMouseButton(1) && shotgunElapsed < 0 && overallElapsed < 0)
         {
             Vector2 lookDir = new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f);
             RaycastHit2D[] hitList = Physics2D.RaycastAll(transform.position, lookDir, shotgunRange, enemyLayer);
@@ -128,7 +126,7 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void PerformMelee()
     {
-        if (Input.GetKey(KeyCode.F) && meleeElapsed < 0)
+        if (Input.GetKey(KeyCode.F) && meleeElapsed < 0 && overallElapsed < 0)
         {
             animator.SetFloat("Speed", 0);
             meleeElapsed = 0;
@@ -159,7 +157,7 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void PerformStomp()
     {
-        if(Input.GetKey(KeyCode.E) && stompElapsed < 0)
+        if(Input.GetKey(KeyCode.E) && stompElapsed < 0 && overallElapsed < 0)
         {
             animator.SetFloat("Speed", 0);
             stompElapsed = 0;
