@@ -45,7 +45,7 @@ public class StartGame : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.X)) 
 		{
-			Application.LoadLevel ("Template_EP_64"); 
+			Application.LoadLevel ("Cinematic 1_EP"); 
 
 
 		}
