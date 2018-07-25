@@ -29,48 +29,27 @@ public class PlayerAttackScript : MonoBehaviour
     public LayerMask enemyLayer;
 
     private float meleeElapsed = -5;
-    private bool meleeDamageDealt = false;
-
-    [Header("Stomp Ability")]
-    public bool enableStomp;
-    public float stompRange;
-    public float timeTillStompDamage;
-    public float stompDuration;
-
-    private float stompElapsed = -5;
-    private bool stompDamageDealt = false;
-
-    //Universal
-    private float overallElapsed = -5;
+    private bool damageDealt = false;
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private Platformer2DUserControl platformer2DUserControl;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        platformer2DUserControl = GetComponent<Platformer2DUserControl>();
     }
 
     private void Update()
     {
-        if(overallElapsed > 0)
-        {
-            overallElapsed -= Time.deltaTime;
-            if (overallElapsed <= 0)
-            {
-                overallElapsed = -5;
-            }
-        }
-
         if(enablePistol)
             PerformPistolShoot();
         if(enableShotgun)
             PerformShotgunShoot();
         if(enableMelee)
             PerformMelee();
-        if (enableStomp)
-            PerformStomp();
     }
 
     private void PerformPistolShoot()
@@ -84,14 +63,13 @@ public class PlayerAttackScript : MonoBehaviour
                 pistolElapsed = -5;
         }
 
-        if (Input.GetMouseButton(0) && pistolElapsed < 0 && overallElapsed < 0)
+        if (Input.GetMouseButton(0) && pistolElapsed < 0)
         {
             GameObject bullet = Instantiate(bulletPrefab);
             float spawnXPos = Mathf.Abs(bulletSpawnRoot.localPosition.x) * ((spriteRenderer.flipX) ? -1 : 1);
             bulletSpawnRoot.localPosition = new Vector3(spawnXPos, bulletSpawnRoot.localPosition.y, bulletSpawnRoot.localPosition.z);
             bullet.GetComponent<BulletScript>().Activate(gameObject, bulletSpawnRoot.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
             pistolElapsed = 0;
-            overallElapsed = pistolCooldown;
         }
     }
 
@@ -106,7 +84,7 @@ public class PlayerAttackScript : MonoBehaviour
                 shotgunElapsed = -5;
         }
 
-        if (Input.GetMouseButton(1) && shotgunElapsed < 0 && overallElapsed < 0)
+        if (Input.GetMouseButton(1) && shotgunElapsed < 0)
         {
             Vector2 lookDir = new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f);
             RaycastHit2D[] hitList = Physics2D.RaycastAll(transform.position, lookDir, shotgunRange, enemyLayer);
@@ -115,7 +93,6 @@ public class PlayerAttackScript : MonoBehaviour
                 hitList[i].collider.GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), "PlayerShotgun");
             }
             shotgunElapsed = 0;
-            overallElapsed = pistolCooldown;
 
             float spawnXPos = Mathf.Abs(shotgunParticles.transform.localPosition.x) * ((spriteRenderer.flipX) ? -1 : 1);
             shotgunParticles.transform.localPosition = new Vector3(spawnXPos, shotgunParticles.transform.localPosition.y, shotgunParticles.transform.localPosition.z);
@@ -126,18 +103,18 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void PerformMelee()
     {
-        if (Input.GetKey(KeyCode.F) && meleeElapsed < 0 && overallElapsed < 0)
+        if (Input.GetKey(KeyCode.F) && meleeElapsed < 0)
         {
+            platformer2DUserControl.enabled = false;
             animator.SetFloat("Speed", 0);
             meleeElapsed = 0;
-            overallElapsed = meleeDuration;
-            meleeDamageDealt = false;
+            damageDealt = false;
             animator.SetTrigger("meleeUse");
         }
         if (meleeElapsed >= 0)
         {
             meleeElapsed += Time.deltaTime;
-            if (meleeElapsed >= timeTillMeleeDamage && !meleeDamageDealt)
+            if (meleeElapsed >= timeTillMeleeDamage && !damageDealt)
             {
                 Vector2 faceDir = (spriteRenderer.flipX) ? Vector2.left : Vector2.right;
                 RaycastHit2D[] hitList = Physics2D.RaycastAll(transform.position, faceDir, meleeRange, enemyLayer);
@@ -146,43 +123,12 @@ public class PlayerAttackScript : MonoBehaviour
                     HealthScript healthScript = hitList[i].collider.GetComponent<HealthScript>();
                     healthScript.ProcessHit(GetComponent<Collider2D>(), "PlayerMelee");
                 }
-                meleeDamageDealt = true;
+                damageDealt = true;
             }
             if (meleeElapsed >= meleeDuration)
             {
                 meleeElapsed = -5;
-            }
-        }
-    }
-
-    private void PerformStomp()
-    {
-        if(Input.GetKey(KeyCode.E) && stompElapsed < 0 && overallElapsed < 0)
-        {
-            animator.SetFloat("Speed", 0);
-            stompElapsed = 0;
-            overallElapsed = stompDuration;
-            stompDamageDealt = false;
-            animator.SetTrigger("stompUse");
-        }
-
-        if (stompElapsed >= 0)
-        {
-            stompElapsed += Time.deltaTime;
-            if (stompElapsed >= timeTillStompDamage && !stompDamageDealt)
-            {
-                RaycastHit2D[] hitList = Physics2D.RaycastAll(transform.position - new Vector3(stompRange / 2f, 0f, 0f), Vector2.right, stompRange, enemyLayer);
-                for (int i = 0; i < hitList.Length; i++)
-                {
-                    HealthScript healthScript = hitList[i].collider.GetComponent<HealthScript>();
-                    healthScript.ProcessHit(GetComponent<Collider2D>(), "PlayerStomp");
-                }
-                GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), "PlayerStomp");
-                stompDamageDealt = true;
-            }
-            if (stompElapsed >= stompDuration)
-            {
-                stompElapsed = -5;
+                platformer2DUserControl.enabled = true;
             }
         }
     }
