@@ -114,6 +114,10 @@ public class PlayerAttackScript : MonoBehaviour
             {
                 hitList[i].collider.GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), "PlayerShotgun");
             }
+            if (hitList.Length <= 0)
+                GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), "PlayerShotgun");
+            else
+                GetComponent<HealthScript>().ProcessHit(10 * hitList.Length);
             shotgunElapsed = 0;
             overallElapsed = pistolCooldown;
 

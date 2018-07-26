@@ -690,7 +690,7 @@ MonoBehaviour:
     type: 2}
   pursueSpeed: 1.1
   attackRange: 3
-  attackDuration: 1
+  attackDuration: 1.5
   timeTillDamage: 0.6
   hurtDuration: 0
   deathDuration: 1
