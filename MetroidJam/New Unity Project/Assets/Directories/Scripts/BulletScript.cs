@@ -13,9 +13,7 @@ public class BulletScript : MonoBehaviour
     {
         source = aSource;
         transform.position = pos;
-        transform.localScale = Vector3.one;
-        if (dir == Vector2.left)
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * dir.x, transform.localScale.y, transform.localScale.z);
         moveDir = dir;
         gameObject.SetActive(true);
     }
