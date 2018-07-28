@@ -7,6 +7,9 @@ namespace UnityStandardAssets._2D
 {
     public class BlobmanAIV2 : MonoBehaviour
     {
+
+		AudioManager sound; 
+
         [Header("Check Objects")]
         public Transform nextGroundCheck;
         public Transform nextWallCheck;
@@ -50,6 +53,13 @@ namespace UnityStandardAssets._2D
         private Animator animator;
         private SpriteRenderer spriteRenderer;
         private PlatformerCharacter2D pCharacter;
+
+
+		public void Start()
+		{
+
+			sound = FindObjectOfType<AudioManager>();  
+		}
 
         private void Awake()
         {
@@ -216,9 +226,10 @@ namespace UnityStandardAssets._2D
                     attackElapsed = 0;
                     damageDealt = false;
                     break;
-                case EnemyPhase.Dead:
-                    animator.SetTrigger("Death");
-                    deathElapsed = 0;
+			case EnemyPhase.Dead:
+				animator.SetTrigger ("Death");
+				deathElapsed = 0;
+				FindObjectOfType<AudioManager> ().Play ("monsterDeath"); 
                     break;
             }
             phase = newPhase;

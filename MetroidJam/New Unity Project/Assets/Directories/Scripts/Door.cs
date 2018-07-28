@@ -41,10 +41,12 @@ public class Door : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.X))
        
         {
+			FindObjectOfType<AudioManager> ().Play ("doorOpen"); 
             Debug.Log("Press X to open!");
             if (col.gameObject.tag == "Player")
             {
                 anim.SetBool("FadeIn", true);
+
                 StartCoroutine(FadeTo());
             }
 

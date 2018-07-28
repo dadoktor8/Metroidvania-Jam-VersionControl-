@@ -2522,6 +2522,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82001901908068056, guid: 0339a05995fcf2a468e5e19f803383bf,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 17ed7be86ae075e43a0a10125696550c, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0339a05995fcf2a468e5e19f803383bf, type: 2}
   m_IsPrefabParent: 0
@@ -10382,7 +10387,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 2.841566
+  orthographic size: 3.27
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -17366,6 +17371,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82001901908068056, guid: 0339a05995fcf2a468e5e19f803383bf,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 962f5dde25a947a46b41a78316c047c8, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0339a05995fcf2a468e5e19f803383bf, type: 2}
   m_IsPrefabParent: 0
@@ -18065,6 +18075,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82001901908068056, guid: 0339a05995fcf2a468e5e19f803383bf,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 58ec36ff5797967408b9f92f10189874, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0339a05995fcf2a468e5e19f803383bf, type: 2}
   m_IsPrefabParent: 0
