@@ -86,9 +86,17 @@ namespace UnityStandardAssets._2D
             {
                 case EnemyPhase.Spawn:
                     {
-                        spawnElapsed += Time.deltaTime;
-                        if (spawnElapsed >= spawnWait)
-                            SetPhase(EnemyPhase.Patrol);
+                        if (animator.speed > 0)
+                        {
+                            spawnElapsed += Time.deltaTime;
+                            if (spawnElapsed >= spawnWait)
+                            {
+                                attackTarget = GameObject.FindGameObjectWithTag("Player");
+                                SetPhase(EnemyPhase.Pursue);
+                            }
+                        }
+                        else if (withinCamera())
+                            animator.speed = 1;
                     }
                     break;
                 case EnemyPhase.Patrol:
@@ -119,7 +127,8 @@ namespace UnityStandardAssets._2D
 
                         MoveTo(attackTarget.transform.position + new Vector3((0.5f * ((spriteRenderer.flipX) ? -1 : 1)), 0f, 0f), pursueSpeed, true);
 
-                        if ((transform.position - attackTarget.transform.position).sqrMagnitude <= Mathf.Pow(attackRange, 2f))
+                        if ((transform.position - attackTarget.transform.position).sqrMagnitude <= Mathf.Pow(attackRange, 2f)
+                            && Mathf.Abs(transform.position.y - attackTarget.transform.position.y) <= 1f)
                             SetPhase(EnemyPhase.Attack);
                     }
                     break;
@@ -174,7 +183,16 @@ namespace UnityStandardAssets._2D
             pCharacter.SetMaxSpeed(speed);
 
             float move = 0;
-            if (transform.position.x > targetPos.x)
+            if (Mathf.Abs(transform.position.y - targetPos.y) >= 1)
+            {
+                if (Mathf.Abs(transform.position.x - targetPos.x) <= 4f)
+                    move = moveDir.x;
+                else if (transform.position.x > targetPos.x)
+                    move = -1f;
+                else if (transform.position.x < targetPos.x)
+                    move = 1f;
+            }
+            else if (transform.position.x > targetPos.x)
                 move = -1f;
             else if (transform.position.x < targetPos.x)
                 move = 1f;
@@ -189,12 +207,25 @@ namespace UnityStandardAssets._2D
                     gapInFloor = Physics2D.Raycast(nextGroundCheck.position, Vector2.down, 10f, pCharacter.GetGroundLayer()).collider == null;
                 }
                 //bool wallInFront = Physics2D.OverlapCircle(nextWallCheck.position, checkRadius, pCharacter.GetGroundLayer()) != null;
-                bool wallInFront = Physics2D.Raycast(nextWallCheck.position, lookDir, 0.75f, pCharacter.GetGroundLayer()).collider != null;
+                bool wallInFront = Physics2D.Raycast(nextWallCheck.position, lookDir, 0.25f, pCharacter.GetGroundLayer()).collider != null;
                 jump = (gapInFloor || wallInFront);// && Physics2D.OverlapCircle(nextCeilingCheck.position, checkRadius, pCharacter.GetGroundLayer()) == null;
             }
 
             moveDir.x = move;
             pCharacter.Move(move, false, jump);
+        }
+
+        private bool withinCamera()
+        {
+            Vector2 spriteExtents = spriteRenderer.bounds.extents;
+            Vector2 screenExtents = new Vector2();
+            screenExtents.y = Camera.main.orthographicSize;
+            screenExtents.x = screenExtents.y / Screen.height * Screen.width;
+
+            Vector2 posDiff = Camera.main.transform.position - transform.position;
+            if (Mathf.Abs(posDiff.x) <= screenExtents.x + spriteExtents.x && Mathf.Abs(posDiff.y) <= screenExtents.y + spriteExtents.y)
+                return true;
+            return false;
         }
 
         public void SetPhase(EnemyPhase newPhase)
@@ -203,6 +234,7 @@ namespace UnityStandardAssets._2D
             {
                 case EnemyPhase.Spawn:
                     //animator.Play("EnemyEntry");
+                    animator.speed = 0;
                     spawnElapsed = 0f;
                     break;
                 case EnemyPhase.Patrol:
