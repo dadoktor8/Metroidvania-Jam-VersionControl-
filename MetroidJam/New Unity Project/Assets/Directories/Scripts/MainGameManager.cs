@@ -31,8 +31,15 @@ public class MainGameManager : MonoBehaviour {
     [SerializeField]
     private InventoryScript Inventory;
     [SerializeField]
+    private InventoryScript DRInventory;
+    [SerializeField]
     FadeIn fadeScreen;
-
+    [SerializeField]
+    GameObject BoxersRobert;
+    [SerializeField]
+    GameObject DressedRobert;
+    [SerializeField]
+    GameObject cCam;
 
     public bool IsObjectiveDone
     {
@@ -102,10 +109,21 @@ public class MainGameManager : MonoBehaviour {
             Debug.Log("Whew! Nice bath!");
             StartCoroutine(fadeScreen.FadeTo());
             RemoveObjective("ShowerObjective");
+            NextObjective("ClosetObjective");
+        }
+
+        if (Inventory.ConsumeItemByName("Closet"))
+        {
+            Debug.Log("I dressed up! Ready for work!");
+            StartCoroutine(fadeScreen.FadeTo());
+            RemoveObjective("ClosetObjective");
+            BoxersRobert.SetActive(false);
+            DressedRobert.SetActive(true);
+            cCam.SetActive(true);
             NextObjective("KeysObjective");
         }
 
-        if (Inventory.ConsumeItemByName("Keys"))
+        if (DRInventory.ConsumeItemByName("Keys"))
         {
             Debug.Log("Keys are in Inventory!");
             StartCoroutine(fadeScreen.FadeTo());
@@ -113,7 +131,7 @@ public class MainGameManager : MonoBehaviour {
             NextObjective("TelephoneObjective");
         }
 
-        if (Inventory.ConsumeItemByName("Telephone"))
+        if (DRInventory.ConsumeItemByName("Telephone"))
         {
             Debug.Log("I picked up the phone!");
             RemoveObjective("TelephoneObjective");
