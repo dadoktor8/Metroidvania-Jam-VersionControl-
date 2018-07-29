@@ -4,7 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System; 
 using System.IO; 
 using UnityEngine;
-using UnityEditor.SceneManagement; 
+//using UnityEditor.SceneManagement; 
 
 public class SaveManager : MonoBehaviour {
 
