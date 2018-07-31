@@ -150,6 +150,11 @@ public class HealthScript : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void PlaySfx(string sfxName)
+    {
+        AudioManager.instance.Play(sfxName);
+    }
+
     #endregion Common Effects Functions
 }
 

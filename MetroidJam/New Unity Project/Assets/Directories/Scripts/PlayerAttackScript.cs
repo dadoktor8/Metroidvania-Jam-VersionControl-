@@ -91,6 +91,7 @@ public class PlayerAttackScript : MonoBehaviour
             bullet.GetComponent<BulletScript>().Activate(gameObject, bulletSpawnRoot.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
             pistolElapsed = 0;
             overallElapsed = pistolCooldown;
+            AudioManager.instance.Play("Pistol");
         }
     }
 
@@ -124,6 +125,8 @@ public class PlayerAttackScript : MonoBehaviour
             shotgunParticles.transform.localPosition = new Vector3(spawnXPos, shotgunParticles.transform.localPosition.y, shotgunParticles.transform.localPosition.z);
             shotgunParticles.transform.localScale = new Vector3(1f, 1f, ((spriteRenderer.flipX) ? -1 : 1));
             shotgunParticles.Play();
+
+            AudioManager.instance.Play("Shotgun");
         }
     }
 

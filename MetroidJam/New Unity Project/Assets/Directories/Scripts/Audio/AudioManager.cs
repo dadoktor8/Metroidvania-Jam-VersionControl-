@@ -6,10 +6,17 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour {
 
 
+        public static AudioManager instance;
+
 		public Sound[] sounds; 
 
 		void Awake()
 		{
+            if (instance == null)
+                instance = this;
+            else if (instance != this)
+                Destroy(this);
+
 			foreach (Sound s in sounds) 
 			{
 

@@ -95,8 +95,11 @@ namespace UnityStandardAssets._2D
                                 SetPhase(EnemyPhase.Pursue);
                             }
                         }
-                        else if (withinCamera())
+                        else if (withinCamera() && animator.speed <= 0)
+                        {
                             animator.speed = 1;
+                            AudioManager.instance.Play("MonsterGrowl");
+                        }
                     }
                     break;
                 case EnemyPhase.Patrol:
@@ -151,10 +154,12 @@ namespace UnityStandardAssets._2D
                             {
                                 case EnemyAttackType.Melee:
                                     attackTarget.GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), gameObject.tag);
+                                    AudioManager.instance.Play("MonsterSwing");
                                     break;
                                 case EnemyAttackType.Projectile:
                                     GameObject bullet = Instantiate(attackPrefab);
                                     bullet.GetComponent<BulletScript>().Activate(gameObject, attackRoot.transform.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
+                                    AudioManager.instance.Play("MonsterSwing");
                                     break;
                             }
                             damageDealt = true;

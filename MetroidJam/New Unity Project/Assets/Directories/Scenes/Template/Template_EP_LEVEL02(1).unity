@@ -225,11 +225,7 @@ Prefab:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 2134779444}
-    m_RemovedComponents:
-    - {fileID: 114542671775388764, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc, type: 2}
-    - {fileID: 114754535412898490, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc, type: 2}
-    - {fileID: 58478961984819972, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc, type: 2}
-    - {fileID: 61934767724080152, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &58184022
@@ -14329,7 +14325,11 @@ MonoBehaviour:
   isObjectiveDone: 0
   objectiveID: 0
   Inventory: {fileID: 1828277170}
+  DRInventory: {fileID: 0}
   fadeScreen: {fileID: 293609425}
+  BoxersRobert: {fileID: 0}
+  DressedRobert: {fileID: 0}
+  cCam: {fileID: 0}
 --- !u!4 &584878293
 Transform:
   m_ObjectHideFlags: 0
@@ -31007,6 +31007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1108884918}
   - component: {fileID: 1108884917}
+  - component: {fileID: 1108884919}
   m_Layer: 0
   m_Name: BackgroungMusic
   m_TagString: Untagged
@@ -31107,6 +31108,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1108884919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108884916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94fcfed2de3ecaa4a89c33073261a849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Pistol
+    clip: {fileID: 8300000, guid: 102480bf119ebe1479cb7cc3ae2171d5, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Shotgun
+    clip: {fileID: 8300000, guid: 25429b7e4b3bbe940afdb12b58aae22e, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: PistolHit
+    clip: {fileID: 8300000, guid: 86c68e2ee0ef89d46b6ada847bd82c2e, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: MonsterHit
+    clip: {fileID: 8300000, guid: b6b125db4913702488083a3108c8f2d5, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: MonsterSwing
+    clip: {fileID: 8300000, guid: 94c140ddc90b4a34ea558a3399db320d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: MonsterGrowl
+    clip: {fileID: 8300000, guid: b770044ce60f16d4787814e19d3bf187, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!4 &1144634576 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4535283061573950, guid: 3879109a2996b7f4a86467737c026dab,
