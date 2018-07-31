@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class MainGameManager : MonoBehaviour {
@@ -40,6 +41,8 @@ public class MainGameManager : MonoBehaviour {
     GameObject DressedRobert;
     [SerializeField]
     GameObject cCam;
+    [SerializeField]
+    GameObject CutScene;
 
     public bool IsObjectiveDone
     {
@@ -135,7 +138,9 @@ public class MainGameManager : MonoBehaviour {
         {
             Debug.Log("I picked up the phone!");
             RemoveObjective("TelephoneObjective");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            DressedRobert.SetActive(false);
+            CutScene.SetActive(true);
+           // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             //NextObjective("KeysObjective");
         }
 
