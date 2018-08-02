@@ -6062,7 +6062,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4732108022003848, guid: 3c07dbd261668a14cac7dcbba7bd96ee, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.17
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4732108022003848, guid: 3c07dbd261668a14cac7dcbba7bd96ee, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10164,7 +10164,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 3.27
+  orthographic size: 2.95
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -12962,7 +12962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &1290241081
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -23048,7 +23048,7 @@ MonoBehaviour:
   m_Follow: {fileID: 692929539}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 3.27
+    OrthographicSize: 2.95
     NearClipPlane: 0.3
     FarClipPlane: 5000
     Dutch: 0
