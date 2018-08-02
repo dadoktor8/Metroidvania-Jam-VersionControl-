@@ -12,10 +12,13 @@ public class Door : MonoBehaviour {
 
     [SerializeField] GameObject text;
 
+    AudioSource source;
+
     // Use this for initialization
     void Start () {
-       
-	}
+        source = GetComponent<AudioSource>();
+
+    }
 
     private void OnTriggerEnter2D(Collider2D col)
 	{
@@ -45,6 +48,7 @@ public class Door : MonoBehaviour {
             if (col.gameObject.tag == "Player")
             {
                 anim.SetBool("FadeIn", true);
+                source.Play();
                 StartCoroutine(FadeTo());
             }
 
