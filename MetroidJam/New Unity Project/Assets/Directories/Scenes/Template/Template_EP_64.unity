@@ -10265,6 +10265,8 @@ MonoBehaviour:
   DressedRobert: {fileID: 1683841669}
   cCam: {fileID: 179424092}
   CutScene: {fileID: 681295465}
+  LockedDoor: {fileID: 0}
+  UnLockedDoor: {fileID: 0}
 --- !u!4 &584878293
 Transform:
   m_ObjectHideFlags: 0
@@ -23048,7 +23050,7 @@ MonoBehaviour:
   m_Follow: {fileID: 692929539}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 2.95
+    OrthographicSize: 3.75
     NearClipPlane: 0.3
     FarClipPlane: 5000
     Dutch: 0

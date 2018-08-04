@@ -44,6 +44,11 @@ public class MainGameManager : MonoBehaviour {
     [SerializeField]
     GameObject CutScene;
 
+    [SerializeField]
+    GameObject LockedDoor;
+    [SerializeField]
+    GameObject UnLockedDoor;
+
     public bool IsObjectiveDone
     {
   
@@ -142,6 +147,17 @@ public class MainGameManager : MonoBehaviour {
             CutScene.SetActive(true);
            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             //NextObjective("KeysObjective");
+        }
+
+        // Level02
+
+        if (Inventory.ConsumeItemByName("KeysRm02"))
+        {
+            Debug.Log("Door Unlocked!");
+            LockedDoor.SetActive(false);
+            UnLockedDoor.SetActive(true);
+            StartCoroutine(fadeScreen.FadeTo());
+            RemoveObjective("KeysObjective");
         }
 
         if (IsObjectiveDone)
