@@ -1,22 +1,24 @@
 ﻿using System.Collections;
-using System.Collections;
+//using System.Collections;
 using System.Runtime.Serialization.Formatters.Binary; 
 using System; 
 using System.IO; 
 using UnityEngine;
-//using UnityEditor.SceneManagement; 
+using UnityEngine.SceneManagement;
+
 
 public class SaveManager : MonoBehaviour {
 
 	public static SaveManager saveManager; 
-
+	public int scene = SceneManager.GetActiveScene().buildIndex;
 	public float playerPositionX; 
 	public float playerPositionY; 
 
 
-
-	void Awake ()
+	public void Awake ()
 	{
+	// float scene = SceneManager.GetActiveScene().buildIndex;
+
 		if (saveManager == null) {
 			DontDestroyOnLoad (gameObject);
 			saveManager = this; 
@@ -31,6 +33,7 @@ public class SaveManager : MonoBehaviour {
 	}
 		public void Save()
 		{ 
+		//float scene = SceneManager.GetActiveScene().buildIndex;
 
 		BinaryFormatter bf = new BinaryFormatter (); 
 		FileStream file = File.Create (Application.persistentDataPath + "/playerInfo.dat"); 
@@ -38,7 +41,7 @@ public class SaveManager : MonoBehaviour {
 		playerData data = new playerData (); 
 		data.playerPosX = playerPositionX; 
 		data.playerPosY = playerPositionY; 
-
+		data.playerScene = scene; 
 
 		bf.Serialize (file, data); 
 		file.Close (); 
@@ -51,6 +54,7 @@ public class SaveManager : MonoBehaviour {
 
 		if (File.Exists (Application.persistentDataPath + "/playerInfo.dat")) 
 		{
+			//float scene = SceneManager.GetActiveScene().buildIndex;
 			BinaryFormatter bf = new BinaryFormatter (); 
 			FileStream file = File.Open (Application.persistentDataPath + "/playerIndo.dat", FileMode.Open); 
 
@@ -60,6 +64,7 @@ public class SaveManager : MonoBehaviour {
 
 			playerPositionX = data.playerPosX; 
 			playerPositionY = data.playerPosY;
+			scene = data.playerScene;
 
 		}
 
@@ -93,6 +98,7 @@ class playerData
 {
 	public float playerPosX; 
 	public float playerPosY; 
+	public int playerScene; 
 
 
 }
