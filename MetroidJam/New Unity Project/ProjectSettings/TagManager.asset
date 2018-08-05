@@ -9,6 +9,7 @@ TagManager:
   - Enemy1
   - EnemyBullet
   - PlayerBullet
+  - FloorSpike
   layers:
   - Default
   - TransparentFX

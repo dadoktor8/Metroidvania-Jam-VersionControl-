@@ -153,7 +153,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1422054337408766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.205, y: -0.205, z: 0}
+  m_LocalPosition: {x: 0.205, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4985971419928044}
@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 1900327031767406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.82, y: -1.6799998, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 4189486078662862}
   - {fileID: 4291991517835378}
@@ -385,10 +385,11 @@ MonoBehaviour:
   spawnWait: 0.5
   patrolSpeed: 0.5
   viewRange: 2
+  enablePursue: 1
   attackType: 0
   attackRoot: {fileID: 0}
   attackPrefab: {fileID: 0}
-  pursueSpeed: 2
+  pursueSpeed: 1.5
   attackRange: 0.6
   attackDuration: 0.5
   timeTillDamage: 0.35
@@ -503,7 +504,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 300
+            m_FloatArgument: 150
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -561,7 +562,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 350
+            m_FloatArgument: 200
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -619,7 +620,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 450
+            m_FloatArgument: 300
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -653,7 +654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 1
-  m_JumpForce: 35
+  m_JumpForce: 50
   m_CrouchSpeed: 0.25
   m_AirControl: 1
   m_WhatIsGround:

@@ -109,7 +109,8 @@ public class PlayerAttackScript : MonoBehaviour
         if (Input.GetMouseButton(1) && shotgunElapsed < 0 && overallElapsed < 0)
         {
             Vector2 lookDir = new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f);
-            RaycastHit2D[] hitList = Physics2D.RaycastAll(transform.position, lookDir, shotgunRange, enemyLayer);
+            RaycastHit2D[] hitList = Physics2D.BoxCastAll(transform.position + new Vector3(shotgunRange / 2f, 0f, 0f), new Vector2(shotgunRange, 0.2f), 0f, lookDir, shotgunRange, enemyLayer);
+
             for(int i = 0; i < hitList.Length; i++)
             {
                 hitList[i].collider.GetComponent<HealthScript>().ProcessHit(GetComponent<Collider2D>(), "PlayerShotgun");

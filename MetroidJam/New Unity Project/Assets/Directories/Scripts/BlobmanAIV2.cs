@@ -24,6 +24,7 @@ namespace UnityStandardAssets._2D
         public float viewRange;
 
         [Header("Pursue & Attack Phase Settings")]
+        public bool enablePursue = true;
         public EnemyAttackType attackType;
         public GameObject attackRoot;
         public GameObject attackPrefab; //used depending on attack type e.g. projectile
@@ -43,7 +44,7 @@ namespace UnityStandardAssets._2D
         private float hurtElapsed;
         private float deathElapsed;
 
-        private float checkRadius = .2f;
+        private float checkRadius = .15f;
 
         private EnemyPhase phase;
 
@@ -128,11 +129,14 @@ namespace UnityStandardAssets._2D
                             return;
                         }
 
-                        MoveTo(attackTarget.transform.position + new Vector3((0.5f * ((spriteRenderer.flipX) ? -1 : 1)), 0f, 0f), pursueSpeed, true);
-
                         if ((transform.position - attackTarget.transform.position).sqrMagnitude <= Mathf.Pow(attackRange, 2f)
-                            && Mathf.Abs(transform.position.y - attackTarget.transform.position.y) <= 1f)
+                            && Mathf.Abs(transform.position.y - attackTarget.transform.position.y) <= 0.5f)
+                        {
                             SetPhase(EnemyPhase.Attack);
+                            return;
+                        }
+
+                        MoveTo(attackTarget.transform.position + new Vector3((0.5f * ((spriteRenderer.flipX) ? -1 : 1)), 0f, 0f), (enablePursue) ? pursueSpeed : 0, true);
                     }
                     break;
                 case EnemyPhase.Attack:
@@ -187,8 +191,10 @@ namespace UnityStandardAssets._2D
 
             pCharacter.SetMaxSpeed(speed);
 
+            bool gapInFloor = Physics2D.OverlapCircle(nextGroundCheck.position, checkRadius, pCharacter.GetGroundLayer()) == null;
+
             float move = 0;
-            if (Mathf.Abs(transform.position.y - targetPos.y) >= 1)
+            if (Mathf.Abs(transform.position.y - targetPos.y) >= 1f)
             {
                 if (Mathf.Abs(transform.position.x - targetPos.x) <= 4f)
                     move = moveDir.x;
@@ -206,10 +212,9 @@ namespace UnityStandardAssets._2D
             bool jump = false;
             if(canJump)
             {
-                bool gapInFloor = Physics2D.OverlapCircle(nextGroundCheck.position, checkRadius, pCharacter.GetGroundLayer()) == null;
                 if (gapInFloor)
                 {
-                    gapInFloor = Physics2D.Raycast(nextGroundCheck.position, Vector2.down, 10f, pCharacter.GetGroundLayer()).collider == null;
+                    gapInFloor = Physics2D.Raycast(nextGroundCheck.position, Vector2.down, 1f, pCharacter.GetGroundLayer()).collider == null || attackTarget.transform.position.y > transform.position.y;
                 }
                 //bool wallInFront = Physics2D.OverlapCircle(nextWallCheck.position, checkRadius, pCharacter.GetGroundLayer()) != null;
                 bool wallInFront = Physics2D.Raycast(nextWallCheck.position, lookDir, 0.25f, pCharacter.GetGroundLayer()).collider != null;
@@ -254,6 +259,7 @@ namespace UnityStandardAssets._2D
                     damageDealt = false;
                     break;
                 case EnemyPhase.Dead:
+                    AudioManager.instance.Play("MonsterGrowl");
                     animator.SetTrigger("Death");
                     deathElapsed = 0;
                     break;
