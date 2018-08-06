@@ -6062,7 +6062,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4732108022003848, guid: 3c07dbd261668a14cac7dcbba7bd96ee, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.14
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 4732108022003848, guid: 3c07dbd261668a14cac7dcbba7bd96ee, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10164,7 +10164,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 2.95
+  orthographic size: 3.75
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -10298,7 +10298,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4799932681877570, guid: b840537c0bc5af947ae2dd261b450c1f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.29
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 4799932681877570, guid: b840537c0bc5af947ae2dd261b450c1f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10670,8 +10670,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681295465}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2531066, y: -0.374004, z: -0.06689453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2032062692}
@@ -23050,7 +23050,7 @@ MonoBehaviour:
   m_Follow: {fileID: 692929539}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 3.75
+    OrthographicSize: 2.876616
     NearClipPlane: 0.3
     FarClipPlane: 5000
     Dutch: 0

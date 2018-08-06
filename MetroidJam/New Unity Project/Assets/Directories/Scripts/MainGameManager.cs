@@ -160,6 +160,13 @@ public class MainGameManager : MonoBehaviour {
             RemoveObjective("KeysObjective");
         }
 
+        if (Inventory.ConsumeItemByName("Knife"))
+        {
+            Debug.Log("Pick Up a Knife!!");
+            DressedRobert.GetComponentInChildren<PlayerAttackScript>().enableMelee = true;
+            RemoveObjective("KnifeObjective");
+        }
+
         if (IsObjectiveDone)
         {
             Debug.Log("Objective Complete!");
