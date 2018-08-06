@@ -11,6 +11,7 @@ namespace UnityStandardAssets._2D
         public Transform nextGroundCheck;
         public Transform nextWallCheck;
         public Transform nextCeilingCheck;
+        public LayerMask enemyLayer;
 
         private Vector2 moveDir;
 
@@ -191,12 +192,22 @@ namespace UnityStandardAssets._2D
 
             pCharacter.SetMaxSpeed(speed);
 
+            Vector2 lookDir = (spriteRenderer.flipX) ? Vector2.left : Vector2.right;
+
             bool gapInFloor = Physics2D.OverlapCircle(nextGroundCheck.position, checkRadius, pCharacter.GetGroundLayer()) == null;
+            if (gapInFloor)
+            {
+                gapInFloor = Physics2D.Raycast(nextGroundCheck.position, Vector2.down, 1f, pCharacter.GetGroundLayer()).collider == null;
+            }
 
             float move = 0;
-            if (Mathf.Abs(transform.position.y - targetPos.y) >= 1f)
+            if (Physics2D.Raycast(nextWallCheck.position, lookDir, 0.05f, enemyLayer))
+                move = -moveDir.x;
+            else if (Mathf.Abs(transform.position.y - targetPos.y) >= 1f)
             {
-                if (Mathf.Abs(transform.position.x - targetPos.x) <= 4f)
+                if (gapInFloor)
+                    move = -moveDir.x;
+                else if (Mathf.Abs(transform.position.x - targetPos.x) <= 4f)
                     move = moveDir.x;
                 else if (transform.position.x > targetPos.x)
                     move = -1f;
@@ -208,14 +219,9 @@ namespace UnityStandardAssets._2D
             else if (transform.position.x < targetPos.x)
                 move = 1f;
 
-            Vector2 lookDir = (spriteRenderer.flipX) ? Vector2.left : Vector2.right;
             bool jump = false;
             if(canJump)
             {
-                if (gapInFloor)
-                {
-                    gapInFloor = Physics2D.Raycast(nextGroundCheck.position, Vector2.down, 1f, pCharacter.GetGroundLayer()).collider == null || attackTarget.transform.position.y > transform.position.y;
-                }
                 //bool wallInFront = Physics2D.OverlapCircle(nextWallCheck.position, checkRadius, pCharacter.GetGroundLayer()) != null;
                 bool wallInFront = Physics2D.Raycast(nextWallCheck.position, lookDir, 0.25f, pCharacter.GetGroundLayer()).collider != null;
                 jump = (gapInFloor || wallInFront);// && Physics2D.OverlapCircle(nextCeilingCheck.position, checkRadius, pCharacter.GetGroundLayer()) == null;

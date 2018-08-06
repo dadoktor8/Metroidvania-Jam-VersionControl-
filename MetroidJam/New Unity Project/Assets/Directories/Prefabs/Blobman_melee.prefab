@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 114547168228472518}
   - component: {fileID: 114771170714173208}
   - component: {fileID: 114594396198532652}
+  - component: {fileID: 114466354143439026}
   m_Layer: 10
   m_Name: Blobman_melee
   m_TagString: Enemy1
@@ -206,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 1900327031767406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.82, y: -1.6799998, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 3.3, y: 3.3, z: 1}
   m_Children:
   - {fileID: 4189486078662862}
   - {fileID: 4291991517835378}
@@ -368,6 +369,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114466354143439026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1900327031767406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9036be78b62bf7140ab706fe7d7916fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  prefab: {fileID: 1173013227653210, guid: 0339a05995fcf2a468e5e19f803383bf, type: 2}
+  item: {fileID: 11400000, guid: 68d1d5eef3737624d984468db62b4ca5, type: 2}
+  itemTag: Pill
+  dropChance: 0.5
 --- !u!114 &114547168228472518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -382,6 +399,9 @@ MonoBehaviour:
   nextGroundCheck: {fileID: 4291991517835378}
   nextWallCheck: {fileID: 4164975571890718}
   nextCeilingCheck: {fileID: 4298240449408266}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   spawnWait: 0.5
   patrolSpeed: 0.5
   viewRange: 2

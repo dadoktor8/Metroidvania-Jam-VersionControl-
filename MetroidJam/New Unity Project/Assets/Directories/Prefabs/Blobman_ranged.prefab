@@ -693,6 +693,9 @@ MonoBehaviour:
   nextGroundCheck: {fileID: 4659167056594456}
   nextWallCheck: {fileID: 4758226886004628}
   nextCeilingCheck: {fileID: 4247563716522468}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   spawnWait: 0.5
   patrolSpeed: 0.5
   viewRange: 5
