@@ -167,6 +167,13 @@ public class MainGameManager : MonoBehaviour {
             RemoveObjective("KnifeObjective");
         }
 
+        if (Inventory.ConsumeItemByName("Pistol"))
+        {
+            Debug.Log("Pick Up a Pistol!!");
+            DressedRobert.GetComponentInChildren<PlayerAttackScript>().enablePistol = true;
+            RemoveObjective("PistolObjective");
+        }
+
         if (IsObjectiveDone)
         {
             Debug.Log("Objective Complete!");
