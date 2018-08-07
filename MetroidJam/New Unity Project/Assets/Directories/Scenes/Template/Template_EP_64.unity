@@ -10164,7 +10164,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 2.876616
+  orthographic size: 2.36753
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -10260,6 +10260,7 @@ MonoBehaviour:
   objectiveID: 0
   Inventory: {fileID: 692929529}
   DRInventory: {fileID: 1683841673}
+  Robertsays: {fileID: 1819956137}
   fadeScreen: {fileID: 293609425}
   BoxersRobert: {fileID: 553574931}
   DressedRobert: {fileID: 1683841669}
@@ -10414,7 +10415,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 620434590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.69, y: -1.593, z: 0}
+  m_LocalPosition: {x: -4.69, y: -1.65, z: 0}
   m_LocalScale: {x: 2.4690468, y: 3.4473438, z: 1}
   m_Children: []
   m_Father: {fileID: 1925415989}
@@ -10628,6 +10629,7 @@ RectTransform:
   m_Children:
   - {fileID: 293609421}
   - {fileID: 514675155}
+  - {fileID: 1819956135}
   - {fileID: 928442628}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -11178,7 +11180,7 @@ RectTransform:
   - {fileID: 2134779443}
   - {fileID: 19138515}
   m_Father: {fileID: 627081328}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -11693,7 +11695,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1072564174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.32, y: -1.614, z: 0}
+  m_LocalPosition: {x: 2.32, y: -1.65, z: 0}
   m_LocalScale: {x: 2.6030617, y: 3.3937378, z: 1}
   m_Children: []
   m_Father: {fileID: 1925415989}
@@ -18402,6 +18404,95 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1763397263}
+--- !u!1 &1819956134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1819956135}
+  - component: {fileID: 1819956138}
+  - component: {fileID: 1819956137}
+  - component: {fileID: 1819956136}
+  m_Layer: 5
+  m_Name: RobertText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1819956135
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1819956134}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 627081328}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 147.6}
+  m_SizeDelta: {x: 684, y: 94.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1819956136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1819956134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1.72, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1819956137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1819956134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.89705884, g: 0.89705884, b: 0.89705884, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b9eb2f308e005ae46889bfc2c2225a27, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1819956138
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1819956134}
 --- !u!1 &1834956209
 GameObject:
   m_ObjectHideFlags: 3
@@ -20593,7 +20684,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1947378483}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.819, y: -1.549, z: 0}
+  m_LocalPosition: {x: -8.819, y: -1.65, z: 0}
   m_LocalScale: {x: 2.5360541, y: 3.4473436, z: 1}
   m_Children: []
   m_Father: {fileID: 1925415989}
@@ -23050,7 +23141,7 @@ MonoBehaviour:
   m_Follow: {fileID: 692929539}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 2.735168
+    OrthographicSize: 2.36753
     NearClipPlane: 0.3
     FarClipPlane: 5000
     Dutch: 0

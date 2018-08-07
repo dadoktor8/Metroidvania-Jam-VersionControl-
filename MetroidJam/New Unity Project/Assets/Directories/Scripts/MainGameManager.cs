@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainGameManager : MonoBehaviour {
 
@@ -33,6 +34,8 @@ public class MainGameManager : MonoBehaviour {
     private InventoryScript Inventory;
     [SerializeField]
     private InventoryScript DRInventory;
+    [SerializeField]
+    Text Robertsays;
     [SerializeField]
     FadeIn fadeScreen;
     [SerializeField]
@@ -107,6 +110,7 @@ public class MainGameManager : MonoBehaviour {
         if (Inventory.ConsumeItemByName("Pill"))
         {
             Debug.Log("Gulp! I feel better now!");
+            StartCoroutine( RobertTalk( ("Gulp! I feel better now!") ) );
             StartCoroutine(fadeScreen.FadeTo());
             RemoveObjective("PillObjective");
             NextObjective("ShowerObjective");
@@ -115,6 +119,7 @@ public class MainGameManager : MonoBehaviour {
         if (Inventory.ConsumeItemByName("Shower"))
         {
             Debug.Log("Whew! Nice bath!");
+            StartCoroutine(RobertTalk(("Whew! Nice bath!")));
             StartCoroutine(fadeScreen.FadeTo());
             RemoveObjective("ShowerObjective");
             NextObjective("ClosetObjective");
@@ -123,6 +128,7 @@ public class MainGameManager : MonoBehaviour {
         if (Inventory.ConsumeItemByName("Closet"))
         {
             Debug.Log("I dressed up! Ready for work!");
+            StartCoroutine(RobertTalk(("Nice! Just to pick up my Keys and go to work!")));
             StartCoroutine(fadeScreen.FadeTo());
             RemoveObjective("ClosetObjective");
             BoxersRobert.SetActive(false);
@@ -134,6 +140,7 @@ public class MainGameManager : MonoBehaviour {
         if (DRInventory.ConsumeItemByName("Keys"))
         {
             Debug.Log("Keys are in Inventory!");
+            StartCoroutine(RobertTalk(("Hm? The phone is ringing?")));
             StartCoroutine(fadeScreen.FadeTo());
             RemoveObjective("KeysObjective");
             NextObjective("TelephoneObjective");
@@ -163,6 +170,7 @@ public class MainGameManager : MonoBehaviour {
         if (Inventory.ConsumeItemByName("Knife"))
         {
             Debug.Log("Pick Up a Knife!!");
+            StartCoroutine(RobertTalk(("Better take it with me! \n ( F to attack )")));
             DressedRobert.GetComponentInChildren<PlayerAttackScript>().enableMelee = true;
             RemoveObjective("KnifeObjective");
         }
@@ -170,8 +178,17 @@ public class MainGameManager : MonoBehaviour {
         if (Inventory.ConsumeItemByName("Pistol"))
         {
             Debug.Log("Pick Up a Pistol!!");
+            StartCoroutine(RobertTalk(("Thank God! A weapon! \n ( Left click to shoot )")));
             DressedRobert.GetComponentInChildren<PlayerAttackScript>().enablePistol = true;
             RemoveObjective("PistolObjective");
+        }
+
+        if (Inventory.ConsumeItemByName("ShotGun"))
+        {
+            Debug.Log("Pick Up a ShotGun!!");
+            StartCoroutine(RobertTalk(("Now i am stronger! \n ( Right click to shoot )")));
+            DressedRobert.GetComponentInChildren<PlayerAttackScript>().enableShotgun = true;
+            RemoveObjective("ShotGunObjective");
         }
 
         if (IsObjectiveDone)
@@ -188,6 +205,14 @@ public class MainGameManager : MonoBehaviour {
     void RemoveObjective(string obj)
     {
         ObjectivesList.RemoveAt(objectiveID);
+    }
+
+    IEnumerator RobertTalk(string RobSays)
+    {
+        yield return new WaitForSeconds(1.5f);
+        Robertsays.text = RobSays;
+        yield  return new WaitForSeconds(2.5f);
+        Robertsays.text = "";
     }
 
 }

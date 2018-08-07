@@ -381,9 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  prefab: {fileID: 1173013227653210, guid: 0339a05995fcf2a468e5e19f803383bf, type: 2}
-  item: {fileID: 11400000, guid: 68d1d5eef3737624d984468db62b4ca5, type: 2}
-  itemTag: Pill
+  prefab: {fileID: 1095617766411038, guid: 000079e8b63f64d45b0d06854aac6b5b, type: 2}
   dropChance: 0.5
 --- !u!114 &114547168228472518
 MonoBehaviour:
