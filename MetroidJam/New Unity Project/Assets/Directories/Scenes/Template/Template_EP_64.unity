@@ -10164,7 +10164,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 2.36753
+  orthographic size: 2.95
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -22959,7 +22959,7 @@ Tilemap:
   - m_RefCount: 192
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9411765, g: 0.91024935, b: 0.67829615, a: 1}
   m_Origin: {x: -13, y: -5, z: 0}
   m_Size: {x: 26, y: 10, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -23141,7 +23141,7 @@ MonoBehaviour:
   m_Follow: {fileID: 692929539}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 2.36753
+    OrthographicSize: 2.95
     NearClipPlane: 0.3
     FarClipPlane: 5000
     Dutch: 0

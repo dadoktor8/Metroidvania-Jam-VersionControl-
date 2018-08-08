@@ -5,10 +5,10 @@ AnimatorOverrideController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: EnemyMelee
+  m_Name: BossRanged
   m_Controller: {fileID: 9100000, guid: fa6155a5086adbc4a92cbc5a9a4a2486, type: 2}
   m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 43c58a5a2260e7b418dbbc83242a294f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6e345c1d2a84cb9449af9a2df26a21a2, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 5083c4d2048d45e4ebe93406e9a2e048, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 3604587f9ccd478439770375d7bb8a7f, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 6e345c1d2a84cb9449af9a2df26a21a2, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 84152fe96a57e31428e2427ca438d644, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6f1ff93ee8623fb46a5ff94022928892, type: 2}
