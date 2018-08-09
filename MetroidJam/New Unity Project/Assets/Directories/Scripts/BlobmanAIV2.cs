@@ -33,6 +33,7 @@ namespace UnityStandardAssets._2D
         public float attackRange;
         public float attackDuration;
         public float timeTillDamage;
+        public bool isBoss = false;
 
         private GameObject attackTarget;
         private float attackElapsed;
@@ -130,7 +131,7 @@ namespace UnityStandardAssets._2D
                             return;
                         }
 
-                        if ((transform.position - attackTarget.transform.position).sqrMagnitude <= Mathf.Pow(attackRange, 2f)
+                        if (isBoss || (transform.position - attackTarget.transform.position).sqrMagnitude <= Mathf.Pow(attackRange, 2f)
                             && Mathf.Abs(transform.position.y - attackTarget.transform.position.y) <= 0.5f)
                         {
                             SetPhase(EnemyPhase.Attack);
@@ -148,6 +149,8 @@ namespace UnityStandardAssets._2D
                             return;
                         }
 
+                        MoveTo(attackTarget.transform.position, 0f, false);
+
                         attackElapsed += Time.deltaTime;
                         if (attackType != EnemyAttackType.Projectile && (transform.position - attackTarget.transform.position).sqrMagnitude > Mathf.Pow(attackRange, 2f) && !damageDealt)
                         {
@@ -164,6 +167,12 @@ namespace UnityStandardAssets._2D
                                 case EnemyAttackType.Projectile:
                                     GameObject bullet = Instantiate(attackPrefab);
                                     bullet.GetComponent<BulletScript>().Activate(gameObject, attackRoot.transform.position, new Vector2(((spriteRenderer.flipX) ? -1 : 1), 0f));
+                                    if(isBoss)
+                                    {
+                                        float yMax = transform.position.y + spriteRenderer.bounds.extents.y - 0.5f;
+                                        float yMin = transform.position.y - spriteRenderer.bounds.extents.y + 1.2f;
+                                        bullet.transform.position = new Vector3(bullet.transform.position.x, Random.Range(yMin, yMax), bullet.transform.position.z);
+                                    }
                                     AudioManager.instance.Play("MonsterSwing");
                                     break;
                             }
@@ -205,7 +214,7 @@ namespace UnityStandardAssets._2D
                 move = -moveDir.x;
             else if (Mathf.Abs(transform.position.y - targetPos.y) >= 1f)
             {
-                if (gapInFloor)
+                if (gapInFloor && transform.position.y - targetPos.y <= 0.5f)
                     move = -moveDir.x;
                 else if (Mathf.Abs(transform.position.x - targetPos.x) <= 4f)
                     move = moveDir.x;
