@@ -1353,6 +1353,7 @@ MonoBehaviour:
   spawnPoint1: {fileID: 1913406259}
   spawnPoint2: {fileID: 639336451}
   EnemyLimit: 3
+  RespawnTime: 13
 --- !u!4 &955665531
 Transform:
   m_ObjectHideFlags: 0
@@ -9438,7 +9439,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
