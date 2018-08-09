@@ -19,7 +19,7 @@ public class ItemDropScript : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (type != DropType.OnDestroy)
+        if (Application.isPlaying || type != DropType.OnDestroy)
             return;
         DropItem();
     }

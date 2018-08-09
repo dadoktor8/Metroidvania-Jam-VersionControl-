@@ -14723,7 +14723,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 0.81
+  orthographic size: 3.590391
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -35542,6 +35542,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: MonsterGrowl
     clip: {fileID: 8300000, guid: b770044ce60f16d4787814e19d3bf187, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Upgrade
+    clip: {fileID: 8300000, guid: 6097eb470a7f87646b0ff43fb6dacef8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Knife
+    clip: {fileID: 8300000, guid: 10a8f10dc2476c946b04a3345fffde9d, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}

@@ -119,6 +119,7 @@ public class MainGameManager : MonoBehaviour {
         if (Inventory.ConsumeItemByName("Shower"))
         {
             Debug.Log("Whew! Nice bath!");
+            AudioManager.instance.Play("SHOWER");
             StartCoroutine(RobertTalk(("Whew! Nice bath!")));
             StartCoroutine(fadeScreen.FadeTo());
             RemoveObjective("ShowerObjective");
@@ -173,6 +174,7 @@ public class MainGameManager : MonoBehaviour {
             StartCoroutine(RobertTalk(("Better take it with me! \n ( F to attack )")));
             DressedRobert.GetComponentInChildren<PlayerAttackScript>().enableMelee = true;
             RemoveObjective("KnifeObjective");
+            AudioManager.instance.Play("Upgrade");
         }
 
         if (Inventory.ConsumeItemByName("Pistol"))
@@ -181,6 +183,7 @@ public class MainGameManager : MonoBehaviour {
             StartCoroutine(RobertTalk(("Thank God! A weapon! \n ( Left click to shoot )")));
             DressedRobert.GetComponentInChildren<PlayerAttackScript>().enablePistol = true;
             RemoveObjective("PistolObjective");
+            AudioManager.instance.Play("Upgrade");
         }
 
         if (Inventory.ConsumeItemByName("ShotGun"))
@@ -189,6 +192,7 @@ public class MainGameManager : MonoBehaviour {
             StartCoroutine(RobertTalk(("Now i am stronger! \n ( Right click to shoot )")));
             DressedRobert.GetComponentInChildren<PlayerAttackScript>().enableShotgun = true;
             RemoveObjective("ShotGunObjective");
+            AudioManager.instance.Play("Upgrade");
         }
 
         if (IsObjectiveDone)

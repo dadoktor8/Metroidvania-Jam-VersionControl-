@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class HealthScript : MonoBehaviour
 {
@@ -153,6 +154,19 @@ public class HealthScript : MonoBehaviour
     public void PlaySfx(string sfxName)
     {
         AudioManager.instance.Play(sfxName);
+    }
+
+    public void ReloadScene(float delay)
+    {
+        if (delay > 0)
+            Invoke("ReloadScene", delay);
+        else
+            ReloadScene();
+    }
+
+    private void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     #endregion Common Effects Functions

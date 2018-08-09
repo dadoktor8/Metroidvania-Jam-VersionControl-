@@ -18122,6 +18122,28 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c051356b2f86d3440a90f16e9a8ca301, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1702328888 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1269231989813682, guid: c051356b2f86d3440a90f16e9a8ca301,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702328887}
+--- !u!114 &1702328889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702328888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94fcfed2de3ecaa4a89c33073261a849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: SHOWER
+    clip: {fileID: 8300000, guid: 324e62608f4d37f4d942c69bd301f7ac, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1 &1716794047
 GameObject:
   m_ObjectHideFlags: 0

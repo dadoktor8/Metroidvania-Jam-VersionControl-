@@ -140,6 +140,7 @@ public class PlayerAttackScript : MonoBehaviour
             overallElapsed = meleeDuration;
             meleeDamageElapsed = false;
             animator.SetTrigger("meleeUse");
+            AudioManager.instance.Play("Knife");
         }
         if (meleeElapsed >= 0)
         {

@@ -229,23 +229,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b34eb90943a8a5040b0791a791a6ae49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enablePistol: 1
+  enablePistol: 0
   bulletSpawnRoot: {fileID: 4156590852696520}
   bulletPrefab: {fileID: 1930386948752358, guid: 8472c195502cf7844bb8201cad31d508,
     type: 2}
   pistolCooldown: 0.25
-  enableShotgun: 1
+  enableShotgun: 0
   shotgunRange: 1.5
   shotgunCooldown: 1
   shotgunParticles: {fileID: 198770440587416074}
-  enableMelee: 1
+  enableMelee: 0
   meleeRange: 0.8
   timeTillMeleeDamage: 0.2
   meleeDuration: 0.5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
-  enableStomp: 1
+  enableStomp: 0
   stompRange: 2
   timeTillStompDamage: 0.5
   stompDuration: 1
@@ -324,6 +324,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 114494909552280278}
+          m_MethodName: ReloadScene
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 2
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   - tag: Pill
@@ -396,6 +407,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 114494909552280278}
+          m_MethodName: ReloadScene
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 2
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   - tag: PlayerStomp
@@ -421,6 +443,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 114494909552280278}
+          m_MethodName: ReloadScene
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 2
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   - tag: PlayerShotgun
@@ -443,6 +476,17 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 114494909552280278}
+          m_MethodName: ReloadScene
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 2
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -479,6 +523,17 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 114494909552280278}
+          m_MethodName: ReloadScene
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 2
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
