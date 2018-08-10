@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour {
 
 	[SerializeField] GameObject text;
+    [SerializeField]
+    int Level = 0;
 
 	void Start () {
 		
@@ -19,9 +21,9 @@ public class StartGame : MonoBehaviour {
 	public void LoadFirstLevel(int x)
 	{
 
-		SceneManager.LoadScene (x);
+        SceneManager.LoadScene(x);
 
-	}
+    }
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
@@ -45,10 +47,12 @@ public class StartGame : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.X)) 
 		{
-			Application.LoadLevel ("Cinematic 1_EP"); 
+            //Application.LoadLevel ("Cinematic 1_EP"); 
+            LoadFirstLevel(Level);
 
+           
 
-		}
+        }
 
 	}
 

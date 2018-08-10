@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 379227116}
   - component: {fileID: 379227115}
   - component: {fileID: 379227114}
+  - component: {fileID: 379227117}
   m_Layer: 0
   m_Name: CreditsDoor
   m_TagString: Untagged
@@ -350,6 +351,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &379227117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379227113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14c04d54af94be4e88b97afbbe652e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 514675154}
+  Level: 3
 --- !u!1 &457857448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,7 +1370,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 3.27
+  orthographic size: 2.898056
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1379,7 +1393,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 572962924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.039997794, y: -0.99, z: -10}
+  m_LocalPosition: {x: -0.04, y: -0.99, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1430,7 +1444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &584878292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,11 +1461,17 @@ MonoBehaviour:
   objectiveID: 0
   Inventory: {fileID: 0}
   DRInventory: {fileID: 0}
+  Robertsays: {fileID: 0}
   fadeScreen: {fileID: 0}
   BoxersRobert: {fileID: 0}
   DressedRobert: {fileID: 0}
   cCam: {fileID: 0}
   CutScene: {fileID: 0}
+  PreEnemy: {fileID: 0}
+  LockedDoor: {fileID: 0}
+  UnLockedDoor: {fileID: 0}
+  PreLockedDoor: {fileID: 0}
+  PreUnLockedDoor: {fileID: 0}
 --- !u!4 &584878293
 Transform:
   m_ObjectHideFlags: 0
@@ -2619,6 +2639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 514675154}
+  Level: 0
 --- !u!1 &1815889675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,6 +2650,7 @@ GameObject:
   - component: {fileID: 1815889678}
   - component: {fileID: 1815889677}
   - component: {fileID: 1815889676}
+  - component: {fileID: 1815889679}
   m_Layer: 0
   m_Name: QuitDoor
   m_TagString: Untagged
@@ -2712,12 +2734,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1815889675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.52, y: -0.93, z: 0}
+  m_LocalPosition: {x: -1.56, y: -0.93, z: 0}
   m_LocalScale: {x: 1.115111, y: 1.4604435, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1815889679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1815889675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b98d2973e13d9b4792ce85d0c41ae1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 514675154}
 --- !u!1 &1925415987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4759,7 +4793,7 @@ MonoBehaviour:
   m_Follow: {fileID: 749807316}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 3.27
+    OrthographicSize: 2.898056
     NearClipPlane: 0.3
     FarClipPlane: 5000
     Dutch: 0
@@ -4771,7 +4805,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1998617511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.039997794, y: -0.99, z: -10}
+  m_LocalPosition: {x: -0.04, y: -0.99, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2143101196}
@@ -4795,7 +4829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2001629073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4935,11 +4969,11 @@ MonoBehaviour:
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
-  m_ScreenX: 0.49999973
+  m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.17920794
-  m_DeadZoneHeight: 0.22125651
+  m_DeadZoneWidth: 0.1
+  m_DeadZoneHeight: 0.1
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour {
 
@@ -11,6 +12,8 @@ public class Door : MonoBehaviour {
     [SerializeField] Animator anim;
 
     [SerializeField] GameObject text;
+
+    public bool isBossDoor;
 
     AudioSource source;
 
@@ -45,11 +48,16 @@ public class Door : MonoBehaviour {
        
         {
             Debug.Log("Press X to open!");
-            if (col.gameObject.tag == "Player")
+            if (isBossDoor)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else if (col.gameObject.tag == "Player")
             {
                 anim.SetBool("FadeIn", true);
                 source.Play();
                 StartCoroutine(FadeTo());
+                
             }
 
         }

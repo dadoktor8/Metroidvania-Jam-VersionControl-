@@ -46,11 +46,16 @@ public class MainGameManager : MonoBehaviour {
     GameObject cCam;
     [SerializeField]
     GameObject CutScene;
-
+    [SerializeField]
+    GameObject PreEnemy;
     [SerializeField]
     GameObject LockedDoor;
     [SerializeField]
     GameObject UnLockedDoor;
+    [SerializeField]
+    GameObject PreLockedDoor;
+    [SerializeField]
+    GameObject PreUnLockedDoor;
 
     public bool IsObjectiveDone
     {
@@ -193,6 +198,21 @@ public class MainGameManager : MonoBehaviour {
             DressedRobert.GetComponentInChildren<PlayerAttackScript>().enableShotgun = true;
             RemoveObjective("ShotGunObjective");
             AudioManager.instance.Play("Upgrade");
+        }
+
+        if (Inventory.ConsumeItemByName("Stomp"))
+        {
+            Debug.Log("Stomp Ability On!!");
+            StartCoroutine(RobertTalk(("I feel different ! My hands are stronger! \n ( E to Stomp )")));
+            DressedRobert.GetComponentInChildren<PlayerAttackScript>().enableStomp = true;
+            RemoveObjective("StompObjective");
+            AudioManager.instance.Play("Upgrade");
+        }
+
+        if (PreEnemy == null)
+        {
+            Debug.Log("PreEnemy is Down!");
+            PreUnLockedDoor.SetActive(true);
         }
 
         if (IsObjectiveDone)
