@@ -353,6 +353,12 @@ Prefab:
       propertyPath: jumpTakeOffSpeed
       value: 7.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114000096842419036, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc,
+        type: 2}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1930386948752358, guid: 404d58dd2a4d23140b08e5ed467e038d,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc, type: 2}
   m_IsPrefabParent: 0
@@ -21976,7 +21982,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 3.586813
+  orthographic size: 0.81
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -23568,7 +23574,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 3.586813
+    OrthographicSize: 0.81
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
