@@ -15,6 +15,8 @@ public class Door : MonoBehaviour {
 
     public bool isBossDoor;
 
+    bool isOpen = false;
+
     AudioSource source;
 
     // Use this for initialization
@@ -33,7 +35,13 @@ public class Door : MonoBehaviour {
 
 	}
 
-	private void OnTriggerExit2D(Collider2D col)
+    private void FixedUpdate()
+    {
+        if (isOpen == true)
+        OpenDoor();
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
 	{
 		if (col.gameObject.tag == "Player")
 		{
@@ -43,6 +51,7 @@ public class Door : MonoBehaviour {
 
 	private void OnTriggerStay2D(Collider2D col)
 	{
+        Debug.Log("Inside Door");
 
 		if (Input.GetKeyDown(KeyCode.X))
        
@@ -52,11 +61,12 @@ public class Door : MonoBehaviour {
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
-            else if (col.gameObject.tag == "Player")
+            else if (col.tag == "Player")
             {
-                anim.SetBool("FadeIn", true);
-                source.Play();
-                StartCoroutine(FadeTo());
+                // anim.SetBool("FadeIn", true);
+                // source.Play();
+                //StartCoroutine(FadeTo());
+                isOpen = true;
                 
             }
 
@@ -69,5 +79,13 @@ public class Door : MonoBehaviour {
         anim.SetBool("FadeIn", false);
         currentGrid.SetActive(false);
         nextGrid.SetActive(true);
+    }
+
+    void OpenDoor()
+    {
+        anim.SetBool("FadeIn", true);
+        source.Play();
+        StartCoroutine(FadeTo());
+        isOpen = false;
     }
 }

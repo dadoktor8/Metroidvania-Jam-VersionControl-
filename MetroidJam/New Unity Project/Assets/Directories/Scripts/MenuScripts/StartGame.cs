@@ -36,7 +36,7 @@ public class StartGame : MonoBehaviour {
 	}
 	private void OnTriggerExit2D(Collider2D col)
 	{
-		if (col.gameObject.tag == "Player")
+		if (col.tag == "Player")
 		{
 			text.SetActive(false);
 		}

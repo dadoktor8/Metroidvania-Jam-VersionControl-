@@ -6,6 +6,17 @@ public class QuitGame : MonoBehaviour {
 
     [SerializeField] GameObject text;
 
+    bool isQuit = false;
+
+    void Update()
+    {
+        if (isQuit)
+        {
+            Debug.Log("Quit");
+            Application.Quit();
+
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -18,7 +29,7 @@ public class QuitGame : MonoBehaviour {
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.tag == "Player")
         {
             text.SetActive(false);
         }
@@ -29,10 +40,8 @@ public class QuitGame : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            Application.Quit();
-            Debug.Log("Quit");
-
-
+                  
+            isQuit = true;
 
         }
 

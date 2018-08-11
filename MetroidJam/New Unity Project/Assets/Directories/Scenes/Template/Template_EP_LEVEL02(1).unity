@@ -359,6 +359,26 @@ Prefab:
       value: 
       objectReference: {fileID: 1930386948752358, guid: 404d58dd2a4d23140b08e5ed467e038d,
         type: 2}
+    - target: {fileID: 50328367732523704, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50328367732523704, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc,
+        type: 2}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50328367732523704, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc,
+        type: 2}
+      propertyPath: m_Mass
+      value: 0.30839235
+      objectReference: {fileID: 0}
+    - target: {fileID: 50328367732523704, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc,
+        type: 2}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c25f8f2d4d5a96f49ac1cc39fd390fcc, type: 2}
   m_IsPrefabParent: 0
@@ -15256,32 +15276,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 1434396217511238, guid: d4f7eda25f1cfa34eab97c844dbddf7b, type: 2}
-      propertyPath: m_Name
-      value: coolWorkingDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 1434396217511238, guid: d4f7eda25f1cfa34eab97c844dbddf7b, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4700508513088312, guid: d4f7eda25f1cfa34eab97c844dbddf7b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4700508513088312, guid: d4f7eda25f1cfa34eab97c844dbddf7b, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114043608794344520, guid: d4f7eda25f1cfa34eab97c844dbddf7b,
-        type: 2}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 293609422}
-    - target: {fileID: 114043608794344520, guid: d4f7eda25f1cfa34eab97c844dbddf7b,
-        type: 2}
-      propertyPath: text
-      value: 
-      objectReference: {fileID: 514675154}
     - target: {fileID: 114043608794344520, guid: d4f7eda25f1cfa34eab97c844dbddf7b,
         type: 2}
       propertyPath: currentGrid
@@ -15294,9 +15288,14 @@ Prefab:
       objectReference: {fileID: 621201948}
     - target: {fileID: 114043608794344520, guid: d4f7eda25f1cfa34eab97c844dbddf7b,
         type: 2}
-      propertyPath: manager
+      propertyPath: anim
       value: 
-      objectReference: {fileID: 584878292}
+      objectReference: {fileID: 293609422}
+    - target: {fileID: 114043608794344520, guid: d4f7eda25f1cfa34eab97c844dbddf7b,
+        type: 2}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 514675154}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4f7eda25f1cfa34eab97c844dbddf7b, type: 2}
   m_IsPrefabParent: 0
@@ -18796,8 +18795,6 @@ GameObject:
   - component: {fileID: 449127442}
   - component: {fileID: 449127447}
   - component: {fileID: 449127446}
-  - component: {fileID: 449127445}
-  - component: {fileID: 449127444}
   - component: {fileID: 449127443}
   m_Layer: 0
   m_Name: Traps
@@ -18832,46 +18829,6 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
---- !u!66 &449127444
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 449127441}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths: []
-  m_CompositePaths:
-    m_Paths: []
-  m_VertexDistance: 0.0005
---- !u!50 &449127445
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 449127441}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!483693784 &449127446
 TilemapRenderer:
   m_ObjectHideFlags: 0
